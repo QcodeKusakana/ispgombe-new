@@ -1,0 +1,31 @@
+Options -Indexes
+
+<FilesMatch "(?i)(^\.|\.sql$|\.log$|\.env$|\.ini$|\.bak$|\.old$|\.orig$|\.dump$|\.zip$|\.tar$|\.gz$)">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "(?i)^(readme\.php|indexdown\.php|indexxxxxxxxxxxxx\.html)$">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^sitemap\.xml$ sitemap.php [L]
+    RewriteCond %{THE_REQUEST} \s/+php/ [NC,OR]
+    RewriteCond %{THE_REQUEST} \s/+menu/ [NC,OR]
+    RewriteCond %{THE_REQUEST} \s/+admin/(pages|functions|forms)/ [NC]
+    RewriteRule ^ - [F,L,NC]
+    RewriteCond %{THE_REQUEST} \s/+pages/(?!ajax/)[^?\s]*\.php(?:[?\s]) [NC]
+    RewriteRule ^pages/ - [F,L,NC]
+    RewriteRule ^media/(attestation|bulletin|carte|certificat|diplome)/ - [F,L,NC]
+</IfModule>
+
+
+

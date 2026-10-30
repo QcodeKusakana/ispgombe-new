@@ -1,0 +1,30 @@
+<?php $escape = static fn($value): string => htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8'); ?>
+<?php if ($department): ?>
+    <section class="detail-hero section-space">
+        <div class="institution-container">
+            <p class="institution-breadcrumb"><a href="?pages=home">Accueil</a><span aria-hidden="true"> / </span><a href="?pages=faculte">Formations</a><?php if (!empty($department['faculte'])): ?><span aria-hidden="true"> / </span><a href="?pages=detail_section&amp;info=<?= (int) $department['faculte'] ?>"><?= $escape($department['section_title'] ?? 'Section') ?></a><?php endif; ?></p>
+            <p class="eyebrow">Département<?= !empty($department['section_title']) ? ' · ' . $escape($department['section_title']) : '' ?></p>
+            <h1 class="page-title"><?= $escape($department['titre']) ?></h1>
+            <p class="page-lead">Présentation du département, de ses filières organisées et des activités disponibles.</p>
+            <?php if (!empty($department['faculte'])): ?><a class="button button-gold" href="?pages=detail_section&amp;info=<?= (int) $department['faculte'] ?>">Retour à la section <span aria-hidden="true">→</span></a><?php endif; ?>
+        </div>
+    </section>
+    <section class="detail-content section-space"><div class="institution-container detail-content-grid">
+        <article class="detail-prose-card"><p class="eyebrow eyebrow-dark">Présentation</p><h2>À propos du département</h2>
+            <?php if (trim((string) ($department['resume'] ?? '')) !== ''): ?><div class="detail-rich-copy"><?= admin_sanitize_rich_text((string) $department['resume']) ?></div><?php else: ?><p class="content-note">La présentation détaillée de ce département sera publiée après validation par l’administration.</p><?php endif; ?>
+        </article>
+        <aside class="detail-aside-card"><span class="detail-index">FORMATION</span><strong><?= count($departmentPrograms) ?></strong><span>filière<?= count($departmentPrograms) === 1 ? '' : 's' ?> organisée<?= count($departmentPrograms) === 1 ? '' : 's' ?></span></aside>
+    </div></section>
+    <?php if ($departmentCovers): ?><section class="detail-gallery-section section-space"><div class="institution-container"><div class="section-heading"><div><p class="eyebrow eyebrow-dark">En images</p><h2>Le département <em>en pratique</em></h2></div></div><div class="detail-gallery-grid">
+        <?php foreach ($departmentCovers as $cover): $photo = basename((string) ($cover['photo_cv'] ?? '')); if ($photo === '') { continue; } ?><figure class="detail-gallery-item"><img src="admin/media/couverture/<?= rawurlencode($photo) ?>" alt="Activité ou infrastructure du département <?= $escape($department['titre']) ?>" loading="lazy"></figure><?php endforeach; ?>
+    </div></div></section><?php endif; ?>
+    <section class="academic-content section-space"><div class="institution-container detail-extra-grid">
+        <?php if ($departmentPrograms): ?><div><div class="section-heading"><div><p class="eyebrow eyebrow-dark">Parcours</p><h2>Filières <em>organisées</em></h2></div></div><div class="academic-grid academic-grid-compact"><?php foreach ($departmentPrograms as $index => $program): ?><article class="academic-card"><span class="academic-index"><?= str_pad((string) ($index + 1), 2, '0', STR_PAD_LEFT) ?></span><h3><?= $escape($program['titre']) ?></h3></article><?php endforeach; ?></div></div><?php endif; ?>
+        <?php if ($departmentAnnouncements): ?><aside class="detail-announcements"><p class="eyebrow eyebrow-dark">Informations</p><h2>Annonces</h2><?php foreach ($departmentAnnouncements as $announcement): ?><div class="detail-rich-copy"><?= admin_sanitize_rich_text((string) $announcement['resumer']) ?></div><?php endforeach; ?></aside><?php endif; ?>
+        <?php if (!$departmentPrograms && !$departmentAnnouncements): ?><p class="content-note">Les informations sur les filières de ce département seront publiées ici.</p><?php endif; ?>
+    </div></section>
+    <?php if ($departmentStaff): ?><section class="detail-extra-section section-space"><div class="institution-container"><div class="section-heading"><div><p class="eyebrow eyebrow-dark">Encadrement académique</p><h2>Équipe <em>dirigeante</em></h2></div></div><div class="profile-grid"><?php foreach ($departmentStaff as $person): $photo = basename((string) ($person['photo'] ?? '')); ?><article class="profile-card"><?php if ($photo !== ''): ?><img src="admin/media/membre/<?= rawurlencode($photo) ?>" alt="" loading="lazy"><?php endif; ?><h3><?= $escape($person['noms']) ?></h3><p><?= $escape($person['fonction']) ?></p></article><?php endforeach; ?></div></div></section><?php endif; ?>
+    <?php if ($departmentMembers): ?><section class="detail-extra-section section-space"><div class="institution-container"><div class="section-heading"><div><p class="eyebrow eyebrow-dark">Communauté</p><h2>Membres du <em>département</em></h2></div></div><div class="profile-grid"><?php foreach ($departmentMembers as $member): $photo = basename((string) ($member['photo'] ?? '')); ?><article class="profile-card"><?php if ($photo !== ''): ?><img src="admin/media/membre/<?= rawurlencode($photo) ?>" alt="" loading="lazy"><?php endif; ?><h3><?= $escape($member['noms']) ?></h3><?php if (!empty($member['grade'])): ?><p><?= $escape($member['grade']) ?></p><?php endif; ?><?php if (!empty($member['domaine'])): ?><p class="profile-domain"><?= $escape($member['domaine']) ?></p><?php endif; ?><?php if (!empty($member['mail']) && filter_var($member['mail'], FILTER_VALIDATE_EMAIL)): ?><a href="mailto:<?= rawurlencode($member['mail']) ?>"><?= $escape($member['mail']) ?></a><?php endif; ?></article><?php endforeach; ?></div></div></section><?php endif; ?>
+<?php else: ?>
+    <section class="page-intro section-space"><div class="institution-container"><p class="eyebrow eyebrow-dark">Formations</p><h1 class="page-title">Département <em>indisponible</em></h1><p class="page-lead">Ce département n’existe pas ou n’est plus publié.</p><a class="button button-gold" href="?pages=faculte">Retour aux sections <span aria-hidden="true">→</span></a></div></section>
+<?php endif; ?>

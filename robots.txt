@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /php/
+Disallow: /menu/
+Disallow: /media/attestation/
+Disallow: /media/bulletin/
+Disallow: /media/carte/
+Disallow: /media/certificat/
+Disallow: /media/diplome/
+Disallow: /?pages=espaceEtudiant
+Disallow: /?pages=loginEtud
+Disallow: /?pages=deconnexion
+Allow: /
+Sitemap: https://ispgombe.ac.cd/sitemap.xml

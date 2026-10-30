@@ -1,0 +1,638 @@
+:root{--navy:#102b4e;--navy-deep:#0a203b;--gold:#c4a15a;--ink:#1e2936;--muted:#647183;--paper:#fff;--warm:#f5f3ee;--line:#d9dee4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font-family:Arial,Helvetica,sans-serif;line-height:1.65}a{color:inherit}.institution-container{width:min(1160px,calc(100% - 48px));margin-inline:auto}.site-header{position:relative;z-index:20;background:white}.utility-bar{background:var(--navy-deep);color:#e2e8ef;font-size:.77rem;letter-spacing:.035em}.utility-inner,.utility-links{display:flex;align-items:center;justify-content:space-between}.utility-inner{min-height:36px}.utility-links{gap:25px}.utility-links a{text-decoration:none}.utility-links a:hover,.site-navigation a:hover{color:var(--gold)}.nav-wrap{min-height:90px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}.brand img{object-fit:contain}.brand strong{display:block;font-size:1.14rem;letter-spacing:.09em;line-height:1.3}.brand small{display:block;font-size:.71rem;color:#707b88;letter-spacing:.01em}.site-navigation{display:flex;align-items:center;gap:clamp(16px,2.2vw,32px)}.site-navigation a{text-decoration:none;color:var(--navy);font-size:.86rem;font-weight:600}.site-navigation a[aria-current=page]{color:#9a7638}.site-navigation .nav-contact{border:1px solid var(--navy);padding:10px 17px}.nav-toggle{display:none;border:0;background:none;padding:9px}.hero-institution{position:relative;min-height:550px;display:flex;align-items:center;color:white;background:#102b4e url('../images/slider/10.jpg') center 42%/cover no-repeat;isolation:isolate}.hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(7,26,48,.94) 0%,rgba(10,34,62,.83) 48%,rgba(11,32,57,.2) 100%)}.hero-content{padding-block:80px 90px}.eyebrow{margin:0 0 17px;color:#dbc58f;font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.17em}.hero-institution h1,.intro-copy h2,.section-heading h2,.cta-inner h2{margin:0;font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.12;letter-spacing:-.025em}.hero-institution h1{max-width:760px;font-size:clamp(2.65rem,6vw,5.15rem)}.hero-institution h1 em,.intro-copy h2 em,.section-heading h2 em,.cta-inner h2 em{color:var(--gold);font-weight:400}.hero-intro{max-width:535px;margin:22px 0 28px;color:#e4eaf0;font-size:1.04rem}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.button{min-height:48px;padding:12px 18px;display:inline-flex;align-items:center;justify-content:center;gap:18px;text-decoration:none;font-size:.85rem;font-weight:700}.button-gold{background:var(--gold);color:#152b45}.button-gold:hover{background:#d6b66f;color:#102b4e}.button-outline{border:1px solid rgba(255,255,255,.65);color:white}.button-outline:hover{background:white;color:var(--navy)}.hero-location{margin-top:43px;color:#d7e0e9;font-size:.8rem}.hero-location span{color:var(--gold);font-size:1.2rem;margin-right:7px}.hero-index{position:absolute;right:max(24px,calc((100vw - 1160px)/2));bottom:30px;font-size:.75rem;letter-spacing:.15em}.hero-index span{color:var(--gold)}.section-space{padding-block:88px}.intro-section{background:#fff}.intro-grid{display:grid;grid-template-columns:.7fr 1.5fr 1.25fr;gap:40px;align-items:start}.section-kicker{display:flex;gap:12px;color:#738092;font-size:.7rem;text-transform:uppercase;letter-spacing:.16em}.section-kicker span:first-child{color:var(--gold)}.intro-copy h2,.section-heading h2,.cta-inner h2{color:var(--navy);font-size:clamp(2rem,3.4vw,3rem)}.intro-copy p{max-width:480px;color:var(--muted);margin:22px 0}.text-link{display:inline-flex;gap:14px;align-items:center;color:var(--navy);text-decoration:none;font-size:.83rem;font-weight:700;border-bottom:1px solid var(--gold);padding-bottom:7px}.text-link span{color:#9a7638}.intro-image{margin:0;position:relative}.intro-image img{display:block;width:100%;height:295px;object-fit:cover}.intro-image figcaption{position:absolute;bottom:0;left:0;background:var(--navy);color:white;padding:9px 13px;font-size:.72rem}.program-section{background:var(--warm)}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:36px}.eyebrow-dark{color:#9a7638}.program-list{border-top:1px solid #d6d2c8}.program-row{display:grid;grid-template-columns:65px 1fr 30px;align-items:center;padding:20px 7px;border-bottom:1px solid #d6d2c8;text-decoration:none;color:var(--navy);transition:padding .2s ease}.program-row:hover{padding-inline:15px;background:#fff}.program-number{color:#aa8e59;font-size:.8rem}.program-title{font-family:Georgia,'Times New Roman',serif;font-size:1.25rem}.program-arrow{justify-self:end;color:#9a7638}.content-note{padding:25px;background:white;color:var(--muted)}.news-section{background:white}.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}.news-item{min-width:0}.news-image{display:block;overflow:hidden;background:#e7e9eb}.news-image img{display:block;width:100%;height:210px;object-fit:cover;transition:transform .3s}.news-image:hover img{transform:scale(1.03)}.news-date{margin:15px 0 5px;color:#9a7638;font-size:.72rem;letter-spacing:.08em}.news-item h3{margin:0 0 8px;color:var(--navy);font-family:Georgia,'Times New Roman',serif;font-size:1.2rem;font-weight:400}.news-item h3 a{text-decoration:none}.news-item>p:last-child{margin:0;color:var(--muted);font-size:.87rem}.news-empty{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);display:flex;align-items:center;gap:18px}.news-empty span{font-size:1.5rem;color:var(--gold)}.cta-strip{background:var(--navy);color:white;padding-block:55px}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta-inner h2{color:white}.cta-inner .eyebrow{margin-bottom:12px}.site-footer{background:#081a2e;color:#ced7e0}.footer-grid{display:grid;grid-template-columns:1.25fr .8fr .85fr 1.25fr;gap:40px;padding-block:55px}.footer-brand{color:white;text-decoration:none;font-family:Georgia,'Times New Roman',serif;font-size:1.45rem}.site-footer h2{margin:0 0 12px;color:#fff;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em}.site-footer p,.site-footer a:not(.footer-brand){font-size:.79rem;color:#bdc8d4}.site-footer p{margin:12px 0}.footer-grid>div:not(:first-child) a{display:block;margin:6px 0;text-decoration:none}.footer-grid a:hover{color:var(--gold)!important}.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:14px 0;font-size:.72rem;color:#9eaebe}.footer-bottom span{color:var(--gold);padding:0 7px}
+@media(max-width:900px){.nav-wrap{min-height:78px}.nav-toggle{display:flex;flex-direction:column;gap:5px;cursor:pointer}.nav-toggle span{width:24px;height:2px;background:var(--navy)}.site-navigation{display:none;position:absolute;top:100%;left:0;right:0;padding:14px 24px 22px;background:white;box-shadow:0 12px 18px #102b4e20;align-items:stretch;gap:0}.site-navigation.is-open{display:flex;flex-direction:column}.site-navigation a{padding:12px 0;border-bottom:1px solid #edf0f3}.site-navigation .nav-contact{border:0;padding:12px 0}.intro-grid{grid-template-columns:.65fr 1.4fr}.intro-image{grid-column:2}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-institution{min-height:510px}}
+@media(max-width:600px){.institution-container{width:min(100% - 36px,1160px)}.utility-inner{min-height:34px}.utility-inner>span{font-size:.67rem}.utility-links{gap:12px;font-size:.68rem}.nav-wrap{min-height:72px}.brand img{width:44px;height:44px}.brand strong{font-size:1rem}.brand small{max-width:230px;font-size:.62rem}.hero-institution{min-height:510px;background-position:58% center}.hero-content{padding-block:67px 82px}.hero-institution h1{font-size:2.72rem}.hero-intro{font-size:.95rem}.hero-actions{align-items:stretch;flex-direction:column;max-width:290px}.hero-actions .button{justify-content:space-between}.hero-location{margin-top:28px}.hero-index{bottom:20px}.section-space{padding-block:62px}.intro-grid{display:block}.section-kicker{margin-bottom:25px}.intro-copy h2,.section-heading h2,.cta-inner h2{font-size:2.15rem}.intro-image{margin-top:28px}.intro-image img{height:235px}.section-heading{align-items:start;flex-direction:column;margin-bottom:25px}.section-heading>.text-link{margin-top:2px}.program-row{grid-template-columns:42px 1fr 20px;padding:17px 3px}.program-title{font-size:1.05rem}.news-grid{grid-template-columns:1fr;gap:25px}.news-image img{height:220px}.cta-inner{align-items:flex-start;flex-direction:column}.cta-inner .button{width:100%}.footer-grid{grid-template-columns:1fr;gap:23px;padding-block:40px}.footer-grid>div:not(:first-child) a{display:inline-block;margin-right:15px}.footer-grid>div:last-child a{display:block}.footer-bottom{padding-block:13px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+.page-intro{min-height:52vh;background:var(--warm)}.page-title{margin:0;color:var(--navy);font:400 clamp(2.6rem,6vw,4.5rem)/1.1 Georgia,'Times New Roman',serif}.page-title em{color:var(--gold);font-weight:400}.page-lead{max-width:700px;margin:22px 0 28px;color:var(--muted);font-size:1.1rem}
+.student-dashboard{background:var(--warm);min-height:60vh}.student-heading{align-items:center}.student-heading .page-title{font-size:clamp(2.1rem,4vw,3rem)}.student-heading .page-lead{margin:10px 0 0;font-size:.95rem}.button-outline-dark{border:1px solid var(--navy);color:var(--navy)}.button-outline-dark:hover{background:var(--navy);color:#fff}.student-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.student-panel{padding:26px;background:#fff;border:1px solid #e3e5e7}.student-panel h2{margin:0 0 18px;color:var(--navy);font:400 1.45rem Georgia,'Times New Roman',serif}.student-details{margin:0}.student-details div{display:grid;grid-template-columns:125px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid #edf0f2}.student-details dt{color:var(--muted);font-size:.82rem;font-weight:400}.student-details dd{margin:0;color:var(--navy);font-size:.9rem}.student-password-form{display:grid;gap:8px}.student-password-form label{margin-top:8px;color:var(--navy);font-size:.85rem;font-weight:700}.student-password-form button{margin-top:12px;justify-self:start;border:0}.student-announcements{margin-top:22px}.student-announcement{padding:16px 0;border-top:1px solid #e8eaed}.student-announcement h3{margin:0 0 8px;color:var(--navy);font:400 1.15rem Georgia,'Times New Roman',serif}.student-announcement>p:last-child{margin:0;color:var(--muted);white-space:normal}.student-note{margin:20px 0 0;color:var(--muted);font-size:.82rem}@media(max-width:720px){.student-heading{align-items:flex-start}.student-grid{grid-template-columns:1fr}.student-details div{grid-template-columns:100px 1fr}}
+.brand-mark{width:52px;height:52px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--navy);font:700 .88rem Georgia,serif;letter-spacing:.04em;position:relative}.brand-mark:after{content:"";position:absolute;inset:4px;border:1px solid #c4a15a80}.hero-institution{background-image:none!important;background-color:var(--navy)!important}.hero-shade{background:radial-gradient(ellipse at 88% 42%,rgba(196,161,90,.16),transparent 36%),linear-gradient(90deg,rgba(7,26,48,.68),rgba(10,34,62,.08) 82%)}.hero-institution:after,.hero-institution:before{content:"";position:absolute;z-index:-1;right:10%;top:16%;width:min(35vw,430px);aspect-ratio:1;border:1px solid rgba(196,161,90,.32);transform:rotate(45deg)}.hero-institution:before{right:13%;top:20%;width:min(29vw,360px);border-color:rgba(255,255,255,.16)}.institution-visual{min-height:295px;position:relative;overflow:hidden;background:#e9e5dc;padding:26px;display:flex;flex-direction:column;justify-content:space-between;color:var(--navy)}.institution-visual:before,.institution-visual:after{content:"";position:absolute;border:1px solid #b99b5e;transform:rotate(45deg)}.institution-visual:before{width:280px;height:280px;right:-60px;top:35px}.institution-visual:after{width:215px;height:215px;right:-27px;top:68px;border-color:#102b4e35}.institution-visual strong{position:relative;z-index:1;font:400 clamp(3.7rem,6vw,5.8rem)/1 Georgia,serif;letter-spacing:-.08em}.institution-visual strong span{color:var(--gold);font-size:.65em;padding-inline:7px}.visual-label,.visual-caption{position:relative;z-index:1;font-size:.63rem;font-weight:700;letter-spacing:.14em}.visual-caption{line-height:1.7;color:#596575}.brand-mark{width:44px;height:44px}.hero-institution{min-height:510px;background-position:initial}
+.institution-page{background:var(--warm);min-height:55vh}.institution-page-grid{display:grid;grid-template-columns:250px 1fr;gap:55px;align-items:start}.institution-page-nav{display:flex;flex-direction:column;gap:3px;padding:19px;background:#fff;border:1px solid #e7e4dd}.institution-page-nav .eyebrow{margin-bottom:8px}.institution-page-nav a{padding:9px 10px;color:#536174;text-decoration:none;font-size:.83rem;border-left:2px solid transparent}.institution-page-nav a[aria-current=page],.institution-page-nav a:hover{border-color:var(--gold);background:#f7f5f0;color:var(--navy)}.institution-page-content{max-width:760px}.institution-page-content .page-title{margin-bottom:25px}.institution-prose{color:#526072;font-size:1.02rem;line-height:1.9;white-space:normal}.institution-prose br{display:block;margin-bottom:.65em;content:""}@media(max-width:800px){.institution-page-grid{grid-template-columns:1fr;gap:30px}.institution-page-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.institution-page-nav .eyebrow{grid-column:1/-1}}
+.contact-honeypot{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;opacity:0}
+
+.student-documents{margin-top:22px}.student-document-list{list-style:none;padding:0;margin:18px 0 0}.student-document-list li{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;border-top:1px solid #e8eaed;color:var(--navy)}.student-document-list .button{padding:8px 12px;font-size:.8rem}@media(max-width:520px){.student-document-list li{align-items:flex-start;flex-direction:column}}
+
+/* ISP-GOMBE institutional identity and legacy public-page system */
+:root{--navy:#24164f;--navy-deep:#17103b;--gold:#e4ca18;--ink:#252338;--muted:#68677a;--warm:#f7f6f1;--line:#e4e1d8;--red:#b8202b;--blue:#283e9c}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
+.utility-bar{background:var(--navy-deep)}
+.brand-logo{display:block;width:56px;height:56px;flex:0 0 auto;object-fit:contain;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #e5e0cf}
+.brand strong{letter-spacing:.06em}.brand small{max-width:290px;line-height:1.35}
+.site-navigation{gap:clamp(12px,1.65vw,24px)}
+.site-navigation a{font-size:.8rem;white-space:nowrap}
+.site-navigation .nav-contact{border:0;background:var(--navy);color:#fff;padding:11px 17px}
+.site-navigation .nav-contact:hover{background:var(--blue);color:#fff}
+.hero-institution{min-height:625px;background-color:var(--navy-deep)!important;background-image:radial-gradient(ellipse at 85% 50%,#493b7a 0%,transparent 37%),linear-gradient(112deg,#17103b 0%,#24164f 62%,#30255f 100%)!important}
+.hero-shade{background:linear-gradient(90deg,rgba(18,12,45,.24),rgba(18,12,45,.02) 80%)}
+.hero-institution:after,.hero-institution:before{right:8%;top:18%;width:min(39vw,470px);border-color:rgba(228,202,24,.28)}
+.hero-institution:before{right:12%;top:23%;width:min(31vw,370px);border-color:rgba(255,255,255,.14)}
+.hero-content{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(270px,.72fr);align-items:center;gap:clamp(35px,7vw,100px)}
+.hero-copy{position:relative;z-index:2}.hero-copy .eyebrow{color:#f1dd4b}
+.hero-institution h1{max-width:720px;font-size:clamp(2.7rem,5.4vw,5rem);line-height:1.08}
+.hero-intro{max-width:590px}.hero-actions .button-gold{background:var(--gold)}
+.hero-emblem{position:relative;z-index:1;margin:0 auto;padding:28px 28px 22px;width:min(100%,370px);text-align:center;background:rgba(255,255,255,.97);box-shadow:0 26px 70px #0c082640;border:1px solid #fff}
+.hero-emblem-frame{width:100%;aspect-ratio:1;display:grid;place-items:center;background:#fff}
+.hero-emblem img{display:block;width:100%;height:100%;object-fit:contain}
+.hero-emblem figcaption{padding-top:15px;color:var(--navy);font:600 .72rem/1.5 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.13em}
+.hero-index{color:#eee7c1}.hero-index span{color:var(--gold)}
+.intro-grid{grid-template-columns:.65fr 1.25fr 1fr;gap:clamp(24px,4vw,58px);align-items:start}
+.institution-facts{display:flex;flex-direction:column;padding:18px 22px;background:var(--warm);border-top:3px solid var(--gold)}
+.institution-facts .eyebrow{margin-bottom:8px}.institution-facts a{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--navy);font-size:.85rem;font-weight:650}
+.institution-facts a:last-child{border-bottom:0}.institution-facts a span{color:#91802a}
+.program-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;border:0}
+.program-card{min-height:205px;padding:24px;background:#fff;border:1px solid #e5e1d7;border-top:3px solid var(--gold);display:flex;flex-direction:column;align-items:flex-start}
+.program-card .program-number{font-size:.73rem;letter-spacing:.12em}.program-title{margin:11px 0 8px;color:var(--navy);font:500 1.25rem/1.35 Georgia,"Times New Roman",serif}
+.program-card p{margin:0 0 16px;color:var(--muted);font-size:.88rem}.program-card .text-link{margin-top:auto}
+.quick-access{background:var(--warm)}.quick-access-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #dcd8cb;border-bottom:1px solid #dcd8cb}
+.quick-access-grid>a{position:relative;display:flex;min-height:168px;flex-direction:column;align-items:flex-start;justify-content:center;padding:25px 20px;border-right:1px solid #dcd8cb;color:var(--navy);text-decoration:none;transition:background .2s ease}
+.quick-access-grid>a:last-child{border-right:0}.quick-access-grid>a:hover{background:#fff}
+.quick-access-grid span{color:#8b7925;font-size:.7rem;letter-spacing:.12em}.quick-access-grid strong{margin:12px 0 4px;font:500 1.14rem Georgia,"Times New Roman",serif}.quick-access-grid small{max-width:190px;color:var(--muted);font-size:.77rem}.quick-access-grid b{position:absolute;right:18px;top:22px;color:#8b7925;font-size:1rem}
+.footer-brand{display:inline-flex;align-items:center;gap:12px;color:#fff;font:600 1.2rem system-ui,sans-serif;letter-spacing:.04em}
+.footer-brand img{width:52px;height:52px;object-fit:contain;border-radius:50%;background:#fff}
+.footer-grid{grid-template-columns:1.2fr .85fr .85fr 1.2fr}
+.footer-grid>div:not(:first-child) a{width:fit-content}.footer-grid a:hover{color:#f1dd4b!important}
+.page-intro{min-height:auto;padding-block:72px;background:linear-gradient(110deg,#f7f6f1,#fff 76%);border-bottom:1px solid var(--line)}
+.page-title{color:var(--navy);font-size:clamp(2.45rem,5vw,4rem)}.page-title em{color:#978319}
+.page-lead{line-height:1.8}.eyebrow-dark{color:#887512}
+.institution-page{background:#fff}.institution-page-nav{border:1px solid var(--line);border-top:3px solid var(--gold)}
+.institution-prose{color:#49485d}.content-note{border-left:3px solid var(--gold);background:#f6f4ed;color:#5c5a68;line-height:1.75}
+.news-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.news-item{padding-bottom:18px;border-bottom:1px solid var(--line)}.news-item h3{font-size:1.3rem;line-height:1.35}
+.news-image{display:block;margin-bottom:14px;background:#f0eee7}.news-image img{height:225px;object-fit:cover}
+.site-footer{background:var(--navy-deep)}.cta-strip{background:var(--navy)}
+
+/* Academic and archive pages retained from the former site */
+.breadcrumbs.overlay{position:relative;display:flex;align-items:center;min-height:220px;padding:46px 0!important;background:linear-gradient(110deg,#17103b,#30255f)!important;background-image:none!important;isolation:isolate}
+.breadcrumbs.overlay:after{content:"";position:absolute;z-index:-1;right:8%;top:25px;width:170px;height:170px;border:1px solid #e4ca1855;transform:rotate(45deg)}
+.breadcrumbs .container{width:min(1160px,calc(100% - 48px));max-width:none;margin-inline:auto;padding:0}
+.breadcrumbs h2{margin:0;color:#fff!important;font:500 clamp(1.9rem,4vw,3rem)/1.2 Georgia,"Times New Roman",serif;letter-spacing:.015em}
+.breadcrumbs h3{margin:18px 0 8px;color:#fff;font:400 1.15rem/1.5 system-ui,sans-serif}
+.breadcrumbs p{max-width:900px;color:#e7e5ef;font-size:.9rem;line-height:1.75}
+#contenu>.events.archive.section,#contenu>.section.events.archive{padding:58px 0 78px!important;background:#fff}
+.events.archive .container{max-width:1160px}.events.archive .row{row-gap:24px}
+.events.archive ul{list-style:none;padding:0;margin:20px 0 0;border-top:1px solid var(--line)}
+.events.archive ul li{border-bottom:1px solid var(--line)}.events.archive ul li a{display:block;padding:17px 16px;color:var(--navy)!important;font-size:1rem!important;text-decoration:none;transition:background .2s}
+.events.archive ul li a:hover{background:var(--warm)}
+.single-event,.events.archive .card{height:100%;overflow:hidden;border:1px solid var(--line);border-radius:0;background:#fff;box-shadow:0 8px 24px #17103b0b;transition:transform .2s,box-shadow .2s}
+.single-event:hover,.events.archive .card:hover{transform:translateY(-3px);box-shadow:0 16px 34px #17103b17}
+.event-image{height:230px;overflow:hidden;background:#f0eee7}.event-image img{width:100%;height:100%;object-fit:cover;border-radius:0}
+.event-content{padding:20px 22px}.event-title{margin:0 0 9px;color:var(--navy);font:500 1.25rem/1.4 Georgia,"Times New Roman",serif}
+.event-content p{color:var(--muted);font-size:.88rem;line-height:1.7}.entry-date-time,.event-content .date{color:#777385;font-size:.76rem}
+.event-date{position:absolute;top:14px;left:14px;background:var(--gold);color:var(--navy);padding:7px 11px;text-align:center}
+.event-date p{margin:0;font-weight:700}.event-date p span{display:block;text-transform:uppercase;font-size:.68rem}
+.events.archive .card{padding:20px!important;margin:0!important}.events.archive .card a{color:var(--navy);font:500 1rem Georgia,"Times New Roman",serif;text-decoration:none}
+.events.archive .card-title,.events.archive h2.title,.events.archive h2{color:var(--navy)!important}
+.pagination{width:min(1160px,calc(100% - 48px));max-width:none;margin:0 auto 45px!important;padding:15px;background:var(--warm)!important;display:flex;justify-content:center;gap:6px}
+.pagination a{display:inline-flex;min-width:38px;min-height:38px;align-items:center;justify-content:center;padding:7px 10px;border:1px solid var(--line);background:#fff;color:var(--navy)!important;text-decoration:none}
+.pagination #pag{background:var(--navy)!important;color:#fff!important}.pagination .disabled{opacity:.45}
+#contenu .card{border-color:var(--line);border-radius:2px;box-shadow:0 8px 24px #17103b0b!important}
+#contenu .card-title{color:var(--navy)}
+#contenu .list-group-item{padding:16px 18px;border-color:var(--line);color:var(--navy)}
+#contenu .list-group-item:hover{background:var(--warm)}
+#contenu .contact.section{padding:56px 0 76px!important}
+#contenu .contact.section .card{height:100%}
+#contenu .zoomable{border-radius:2px}
+.institution-breadcrumb{margin:0 0 18px;color:#ded8b6;font-size:.75rem;letter-spacing:.07em}
+@media(max-width:1050px){.site-navigation{gap:12px}.site-navigation a{font-size:.75rem}.brand small{max-width:230px}.hero-content{gap:35px}.hero-emblem{width:310px}.footer-grid{gap:26px}}
+@media(max-width:900px){.site-navigation{gap:0}.site-navigation a{font-size:.87rem}.hero-content{grid-template-columns:minmax(0,1.25fr) minmax(220px,.75fr)}.hero-emblem{width:260px;padding:20px 20px 15px}.intro-grid{grid-template-columns:.6fr 1.4fr}.institution-facts{grid-column:2}.quick-access-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.quick-access-grid>a:nth-child(2){border-right:0}.quick-access-grid>a:nth-child(-n+2){border-bottom:1px solid #dcd8cb}}
+@media(max-width:650px){.utility-inner>span{max-width:55%;line-height:1.25}.utility-links a:first-child{display:none}.brand-logo{width:46px;height:46px}.brand small{max-width:220px}.hero-institution{min-height:auto}.hero-content{display:flex;flex-direction:column;align-items:stretch;gap:30px;padding-block:55px 68px}.hero-copy{order:1}.hero-emblem{order:2;width:190px;align-self:flex-start;padding:12px 12px 10px}.hero-emblem figcaption{font-size:.57rem;padding-top:8px}.hero-institution h1{font-size:clamp(2.5rem,11vw,3.5rem)}.hero-intro{font-size:.93rem}.hero-location{margin-top:23px}.hero-institution:after{right:-25%;top:45%;width:78vw}.hero-institution:before{right:-15%;top:48%;width:60vw}.intro-grid{display:block}.section-kicker{margin-bottom:20px}.institution-facts{margin-top:28px}.program-list{grid-template-columns:1fr}.program-card{min-height:0}.quick-access-grid{grid-template-columns:1fr}.quick-access-grid>a{min-height:132px;border-right:0;border-bottom:1px solid #dcd8cb!important}.quick-access-grid>a:last-child{border-bottom:0!important}.footer-grid{grid-template-columns:1fr}.footer-brand img{width:45px;height:45px}.breadcrumbs.overlay{min-height:165px;padding:34px 0!important}.breadcrumbs .container,.institution-container{width:calc(100% - 36px)}.breadcrumbs.overlay:after{right:-35px;top:20px;width:120px;height:120px}.events.archive .container{width:calc(100% - 36px)}.events.archive .card{width:100%}.pagination{width:calc(100% - 36px);flex-wrap:wrap}.news-grid{grid-template-columns:1fr}.page-intro{padding-block:52px}.institution-page-grid{gap:24px}.institution-page-nav{grid-template-columns:1fr 1fr}}
+.academic-intro{background:linear-gradient(112deg,#f7f6f1 0%,#fff 78%);border-bottom:1px solid var(--line)}
+.academic-content{background:#fff}.academic-context{display:inline-block;margin:0;padding:9px 12px;border-left:3px solid var(--gold);background:#efeee8;color:#55536a;font-size:.83rem}
+.academic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.academic-grid-compact{grid-template-columns:repeat(4,minmax(0,1fr))}
+.academic-card{min-height:245px;padding:24px;display:flex;flex-direction:column;align-items:flex-start;background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold)}
+.academic-card h2{margin:13px 0 9px;color:var(--navy);font:500 1.35rem/1.35 Georgia,"Times New Roman",serif}
+.academic-card>p:not(.academic-overline){margin:0 0 17px;color:var(--muted);font-size:.87rem;line-height:1.7}
+.academic-card .text-link{margin-top:auto}.academic-index{color:#8b7925;font-size:.72rem;letter-spacing:.13em}.academic-overline{margin:8px 0 0;color:#817440;font-size:.71rem;letter-spacing:.06em;text-transform:uppercase}
+.academic-link-card{position:relative;min-height:148px;padding:22px;display:flex;flex-direction:column;justify-content:center;gap:8px;border:1px solid var(--line);border-top:3px solid var(--gold);background:#fff;color:var(--navy);text-decoration:none;transition:transform .2s,box-shadow .2s}
+.academic-link-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px #17103b12}.academic-link-card span{color:#807239;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}.academic-link-card strong{max-width:90%;font:500 1.1rem/1.4 Georgia,"Times New Roman",serif}.academic-link-card b{position:absolute;right:18px;top:18px;color:#8b7925}
+.results-intro{color:#fff;background:linear-gradient(112deg,#17103b,#30255f);border:0}.results-intro .eyebrow{color:#f1dd4b}.results-intro .page-title,.results-intro .page-title em{color:#fff}.results-intro .page-lead{color:#e7e5ef}
+.results-note{margin-top:56px;padding:24px 26px;background:var(--warm);border-left:3px solid var(--gold)}.results-note h2,.results-list-heading h2{margin:0 0 10px;color:var(--navy);font:500 1.45rem Georgia,"Times New Roman",serif}.results-note p{max-width:880px;color:var(--muted);font-size:.87rem;line-height:1.75}
+.results-list-wrap{max-width:900px}.results-list-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;padding-bottom:17px;border-bottom:1px solid var(--line)}.results-list-heading .eyebrow{margin-bottom:8px}.results-list-heading p{margin:0;color:var(--muted)}
+.results-list{margin:0 0 28px;padding:0;list-style:none;columns:2;column-gap:42px}.results-list li{break-inside:avoid;padding:12px 6px;border-bottom:1px solid var(--line);color:#343247;font-size:.92rem}
+.results-privacy{margin:28px 0;color:var(--muted);font-size:.83rem;line-height:1.7}.results-privacy a{color:var(--navy);font-weight:700}
+.news-archive{background:#fff}.news-archive-grid{row-gap:34px}.news-archive .news-item h2{margin:0 0 9px;color:var(--navy);font:500 1.35rem/1.35 Georgia,"Times New Roman",serif}.news-archive .news-item h2 a{color:inherit;text-decoration:none}.news-archive .news-item h2 a:hover{color:#81721b}
+.news-archive .news-item>p:not(.news-date){margin:0 0 15px;color:var(--muted);font-size:.88rem;line-height:1.75}.campus-story{padding-bottom:22px}.archive-pagination{display:flex;flex-wrap:wrap;gap:6px;margin-top:38px}.archive-pagination a{min-width:39px;min-height:39px;display:grid;place-items:center;padding:7px 10px;border:1px solid var(--line);color:var(--navy);text-decoration:none}.archive-pagination a[aria-current=page],.archive-pagination a:hover{border-color:var(--navy);background:var(--navy);color:#fff}
+@media(max-width:900px){.academic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.academic-grid-compact{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.academic-grid,.academic-grid-compact{grid-template-columns:1fr}.academic-card{min-height:0}.academic-link-card{min-height:120px}.results-list{columns:1}.results-list-heading{align-items:flex-start;flex-direction:column}.results-note{margin-top:36px;padding:20px}.news-archive-grid{row-gap:26px}}
+.article-heading{padding:72px 0 58px;background:linear-gradient(112deg,#17103b,#30255f);color:#fff}.article-heading .eyebrow{color:#f1dd4b}.article-heading .institution-breadcrumb a{color:#fff;text-decoration:none}.article-heading time{color:#ded8b6;font-size:.84rem}
+.article-title{max-width:900px;margin:15px 0 18px;color:#fff;font:500 clamp(2.25rem,5vw,4rem)/1.12 Georgia,"Times New Roman",serif}
+.article-layout{background:#fff}.article-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(250px,.8fr);gap:48px;align-items:start}.article-body{min-width:0}.article-cover{display:block;width:100%;max-height:560px;object-fit:cover;margin:0 0 28px;background:var(--warm)}.article-copy{color:#424253;font-size:1rem;line-height:1.9;overflow-wrap:anywhere}.article-related{padding:22px;background:var(--warm);border-top:3px solid var(--gold)}
+.related-item{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid #dedbd1;color:var(--navy);text-decoration:none}.related-item:last-child{border-bottom:0}.related-item img{width:68px;height:68px;flex:0 0 68px;object-fit:cover}.related-item span{display:flex;flex-direction:column;gap:6px}.related-item small{color:var(--muted);font-size:.7rem}.related-item strong{font:500 .95rem/1.4 Georgia,"Times New Roman",serif}
+.department-team{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.department-team .card{width:auto!important;margin:0!important;border-radius:0!important}.department-team .card-img-top{width:120px;height:120px}.detail-gallery .carousel-item img{height:clamp(230px,35vw,430px)!important;object-fit:cover}.department-detail-section{padding:50px 0}.department-detail-title{color:var(--navy);font:500 1.6rem Georgia,"Times New Roman",serif}
+@media(max-width:650px){.article-heading{padding:50px 0 42px}.article-grid{grid-template-columns:1fr;gap:30px}.article-related{order:2}.article-cover{max-height:360px}}
+.swiper-wrapper{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.swiper-slide{min-width:0}.swiper-pagination,.swiper-button-prev1,.swiper-button-next1{display:none}
+/* Accueil: carrousel institutionnel, sans dépendance externe */
+.home-carousel{position:relative;min-height:680px;overflow:hidden;background:#17103b;color:#fff;isolation:isolate}
+.home-slide{position:relative;min-height:680px;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 84% 43%,#463875 0%,transparent 38%),linear-gradient(115deg,#17103b 0%,#24164f 58%,#30255f 100%);animation:home-slide-in .55s ease both}
+.home-slide[hidden]{display:none!important}.home-slide-academic{background:radial-gradient(ellipse at 80% 45%,#3a4b7d 0%,transparent 39%),linear-gradient(115deg,#121d3c,#24164f 62%,#352766)}.home-slide-campus{background:radial-gradient(ellipse at 85% 42%,#665021 0%,transparent 39%),linear-gradient(115deg,#20173e,#2d2056 60%,#3f315d)}
+.home-slide-inner{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(250px,.72fr);align-items:center;gap:clamp(36px,7vw,100px);padding-block:70px 105px}
+.home-slide .hero-copy{position:relative;z-index:3}.home-slide .hero-copy .eyebrow{color:#f1dd4b}.home-slide h1,.home-slide h2{max-width:760px;margin:0;color:#fff;font:400 clamp(2.7rem,5.4vw,5rem)/1.08 Georgia,"Times New Roman",serif;letter-spacing:-.035em}.home-slide h1 em,.home-slide h2 em{color:#e4ca18;font-weight:400}.home-slide .hero-intro{max-width:580px;margin:23px 0 28px;color:#e7e5ef;font-size:1.02rem;line-height:1.75}.home-slide .hero-location{margin-top:28px;color:#ded8e9;font-size:.8rem}.home-slide .hero-location span{color:#e4ca18}
+.home-slide .hero-emblem{position:relative;z-index:2;width:min(100%,365px);margin:0 auto;padding:25px 25px 20px;background:#fff;border:1px solid #fff;box-shadow:0 28px 80px #0b082b55;text-align:center}.home-slide .hero-emblem-frame{aspect-ratio:1;background:#fff}.home-slide .hero-emblem img{display:block;width:100%;height:100%;object-fit:contain}.home-slide .hero-emblem figcaption{padding-top:13px;color:#24164f;font:700 .7rem/1.5 system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+.home-slide-art{position:absolute;z-index:0;right:max(40px,calc((100vw - 1220px)/2));top:50%;width:min(46vw,630px);aspect-ratio:1;transform:translateY(-53%);pointer-events:none}.art-ring{position:absolute;inset:3%;border:1px solid #e4ca184d;transform:rotate(45deg)}.art-ring-two{inset:12%;border-color:#ffffff24;transform:rotate(25deg)}.art-monogram{position:absolute;inset:0;display:grid;place-content:center;color:#fff;font:400 clamp(4rem,11vw,9rem)/1 Georgia,"Times New Roman",serif;letter-spacing:-.08em;opacity:.055}.art-monogram span{color:#e4ca18}
+.carousel-controls{position:absolute;z-index:5;left:50%;bottom:25px;display:flex;align-items:center;justify-content:space-between;transform:translateX(-50%)}.carousel-dots,.carousel-arrows{display:flex;align-items:center;gap:9px}.carousel-dots button{width:26px;height:4px;padding:0;border:0;background:#ffffff63;cursor:pointer}.carousel-dots button[aria-current=true]{width:48px;background:#e4ca18}.carousel-arrows button{width:42px;height:42px;border:1px solid #ffffff60;background:#ffffff0c;color:#fff;font-size:1.1rem;cursor:pointer}.carousel-arrows button:hover,.carousel-arrows button:focus-visible{background:#e4ca18;border-color:#e4ca18;color:#17103b}.carousel-arrows button:focus-visible,.carousel-dots button:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.presentation-video{background:#f7f6f1}.video-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(35px,7vw,90px);align-items:center}.video-copy h2{margin:0;color:#24164f;font:400 clamp(2.1rem,3.6vw,3.3rem)/1.12 Georgia,"Times New Roman",serif}.video-copy h2 em{color:#8f7a1d;font-weight:400}.video-copy>p:not(.eyebrow){max-width:390px;margin:20px 0;color:#68677a;line-height:1.8}.video-frame{position:relative;padding:10px;background:#fff;border:1px solid #e4e1d8;box-shadow:0 24px 60px #17103b15}.video-frame video{display:block;width:100%;aspect-ratio:16/9;background:#17103b;object-fit:contain}.video-caption{display:flex;align-items:center;gap:9px;margin:0;padding:13px 10px 3px;color:#24164f;font-size:.78rem;font-weight:700}.video-caption span{color:#8b7925}
+@keyframes home-slide-in{from{opacity:.45}to{opacity:1}}
+@media(max-width:900px){.home-carousel,.home-slide{min-height:630px}.home-slide-inner{grid-template-columns:minmax(0,1.2fr) minmax(220px,.8fr);gap:32px}.home-slide .hero-emblem{width:275px;padding:18px}.home-slide-art{right:-6%;width:58vw}.video-grid{grid-template-columns:1fr 1.15fr;gap:34px}}
+@media(max-width:650px){.home-carousel,.home-slide{min-height:0}.home-slide-inner{display:flex;flex-direction:column;align-items:stretch;gap:26px;padding-block:52px 104px}.home-slide .hero-copy{order:1}.home-slide .hero-emblem{order:2;align-self:flex-start;width:170px;margin:0;padding:10px}.home-slide .hero-emblem figcaption{padding-top:8px;font-size:.55rem}.home-slide h1,.home-slide h2{font-size:clamp(2.55rem,11vw,3.45rem)}.home-slide .hero-intro{font-size:.92rem}.home-slide .hero-location{margin-top:21px}.home-slide-art{top:auto;right:-30%;bottom:13%;width:100vw;transform:none}.carousel-controls{bottom:17px}.carousel-arrows{gap:5px}.carousel-arrows button{width:38px;height:38px}.carousel-dots button{width:19px}.carousel-dots button[aria-current=true]{width:36px}.video-grid{grid-template-columns:1fr;gap:25px}.presentation-video{padding-block:60px}}
+@media(prefers-reduced-motion:reduce){.home-slide{animation:none}}
+
+/* Le message d’accueil reste fixe ; seul le cadre photographique défile. */
+.home-carousel{min-height:0;padding:clamp(52px,7vw,92px) 0;background:radial-gradient(ellipse at 78% 42%,#463875 0%,transparent 37%),linear-gradient(115deg,#17103b 0%,#24164f 60%,#30255f 100%)}
+.home-slide-inner{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);align-items:center;gap:clamp(40px,7vw,96px);padding-block:0}
+.hero-copy{position:relative;z-index:2}.hero-copy .eyebrow{color:#f1dd4b}.hero-copy h1{max-width:760px;margin:0;color:#fff;font:400 clamp(2.7rem,5.2vw,4.65rem)/1.08 Georgia,"Times New Roman",serif;letter-spacing:-.035em}.hero-copy h1 em{color:#e4ca18;font-weight:400}.hero-copy .hero-intro{max-width:560px;margin:23px 0 28px;color:#e7e5ef;font-size:1.02rem;line-height:1.75}.hero-copy .hero-location{margin-top:28px;color:#ded8e9;font-size:.8rem}.hero-copy .hero-location span{color:#e4ca18}
+.hero-gallery{position:relative;min-width:0;height:clamp(360px,40vw,510px);overflow:hidden;border:1px solid #ffffff36;border-radius:4px;background:#251a4a;box-shadow:0 28px 80px #0b082b66}.hero-gallery-frames,.gallery-slide{position:absolute;inset:0;margin:0}.gallery-slide[hidden]{display:none!important}.gallery-slide{animation:gallery-image-in .75s ease both}.gallery-slide img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 7s cubic-bezier(.2,.65,.3,1);filter:saturate(.86)}.gallery-slide.is-active img{transform:scale(1.045)}.gallery-slide::after{content:"";position:absolute;inset:38% 0 0;background:linear-gradient(transparent,#100c28d9)}.gallery-slide figcaption{position:absolute;z-index:1;right:28px;bottom:83px;left:28px;display:flex;flex-direction:column;gap:8px;color:#fff}.gallery-slide figcaption strong{max-width:450px;font:400 clamp(1.3rem,2.3vw,2rem)/1.2 Georgia,"Times New Roman",serif}.gallery-kicker{color:#f1dd4b;font-size:.68rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.gallery-controls{position:absolute;z-index:3;right:20px;bottom:18px;left:20px;display:flex;align-items:center;justify-content:space-between}.gallery-controls .carousel-dots button{width:22px}.gallery-controls .carousel-dots button[aria-current=true]{width:42px}.gallery-controls .carousel-arrows button{width:38px;height:38px}.gallery-mark{position:absolute;z-index:2;top:18px;right:18px;width:56px;height:56px;padding:5px;border-radius:50%;background:#fff;box-shadow:0 6px 20px #100c2840}.gallery-mark img{display:block;width:100%;height:100%;object-fit:contain;border-radius:50%}
+@keyframes gallery-image-in{from{opacity:.45}to{opacity:1}}
+@media(max-width:900px){.home-slide-inner{grid-template-columns:minmax(0,1fr) minmax(300px,.9fr);gap:32px}.hero-gallery{height:390px}}
+@media(max-width:650px){.home-carousel{padding:48px 0 56px}.home-slide-inner{display:flex;flex-direction:column;align-items:stretch;gap:30px}.hero-gallery{order:2;height:clamp(285px,76vw,390px)}.hero-copy{order:1}.hero-copy h1{font-size:clamp(2.5rem,10.8vw,3.4rem)}.hero-copy .hero-intro{font-size:.92rem}.hero-copy .hero-location{margin-top:21px}.gallery-slide figcaption{right:18px;bottom:75px;left:18px}.gallery-controls{right:12px;left:12px}.gallery-mark{top:12px;right:12px;width:46px;height:46px}}
+@media(prefers-reduced-motion:reduce){.gallery-slide,.gallery-slide img{animation:none;transition:none}}
+
+/* Navigation institutionnelle : rubriques restaurées du site d’origine. */
+.site-navigation .nav-group{position:relative;align-self:center;color:var(--navy)}
+.site-navigation .nav-group>summary{display:flex;align-items:center;gap:7px;list-style:none;cursor:pointer;color:var(--navy);font-size:.8rem;font-weight:600;white-space:nowrap}
+.site-navigation .nav-group>summary::-webkit-details-marker{display:none}
+.site-navigation .nav-group>summary span{font-size:.95rem;transition:transform .18s ease}
+.site-navigation .nav-group[open]>summary span{transform:rotate(180deg)}
+.site-navigation .nav-group>summary:hover,.site-navigation .nav-group>summary[aria-current=page]{color:#9a7638}
+.nav-dropdown{position:absolute;top:calc(100% + 16px);left:-16px;z-index:30;display:grid;min-width:255px;padding:8px;background:#fff;border:1px solid #e7e8eb;box-shadow:0 18px 38px #102b4e1f}
+.nav-dropdown a{display:block;padding:10px 12px!important;border-bottom:1px solid #edf0f3;color:var(--navy);font-size:.8rem!important;line-height:1.4}
+.nav-dropdown a:last-child{border-bottom:0}
+.nav-dropdown a:hover{background:#f7f5ef;color:#86672f!important}
+@media(max-width:1050px){.nav-wrap{position:relative}.nav-toggle{display:flex;flex-direction:column;gap:5px;cursor:pointer}.nav-toggle span{width:24px;height:2px;background:var(--navy)}.site-navigation{display:none;position:absolute;top:100%;left:-24px;right:-24px;padding:14px 24px 22px;background:white;box-shadow:0 12px 18px #102b4e20;align-items:stretch;gap:0}.site-navigation.is-open{display:flex;flex-direction:column}.site-navigation>a{padding:12px 0;border-bottom:1px solid #edf0f3}.site-navigation .nav-contact{border:0;padding:12px 0}.site-navigation .nav-group{align-self:stretch;border-bottom:1px solid #edf0f3}.site-navigation .nav-group>summary{min-height:46px;padding:10px 0;font-size:.87rem}.nav-dropdown{position:static;min-width:0;margin:0 0 8px 10px;padding:0 0 0 10px;border:0;border-left:2px solid #d6c18c;box-shadow:none}.nav-dropdown a{padding:9px 10px!important;border-bottom:0;font-size:.82rem!important}.site-navigation .nav-group[open]>summary span{transform:rotate(180deg)}}
+@media(prefers-reduced-motion:reduce){.site-navigation .nav-group>summary span{transition:none}}
+
+/* Finitions communes aux pages publiques et aux parcours étudiants. */
+:root{--focus-ring:#a16207;--surface:#fff;--surface-soft:#f7f6f1;--ink-strong:#252338;--muted-strong:#56566a}
+body{color:var(--ink-strong);font-size:16px;line-height:1.65}
+button,a,input,select,textarea,summary{touch-action:manipulation}
+:focus-visible{outline:3px solid var(--focus-ring);outline-offset:3px}
+.skip-link{position:fixed;z-index:1100;top:12px;left:12px;transform:translateY(-160%);padding:12px 16px;background:#fff;color:var(--navy);font-weight:700;box-shadow:0 4px 20px #1113}
+.skip-link:focus{transform:translateY(0)}
+.site-navigation .nav-group>summary{min-height:44px}
+.site-navigation>a,.nav-dropdown a{min-height:44px;display:flex;align-items:center}
+.page-intro{min-height:0;padding-block:clamp(52px,7vw,82px);background:linear-gradient(115deg,#f5f3ec 0%,#fff 78%);border-bottom:1px solid var(--line)}
+.page-intro .institution-container{position:relative}
+.page-title{max-width:920px;font-size:clamp(2.45rem,5.2vw,4.35rem);letter-spacing:-.035em}
+.page-lead{max-width:720px;color:#55596a;font-size:1.02rem;line-height:1.8}
+.page-intro .button{margin-top:5px}
+.content-note{border:1px solid var(--line);border-left:3px solid var(--gold);line-height:1.7}
+.academic-content,.news-archive,.detail-content,.detail-gallery-section,.detail-extra-section{background:#fff}
+.academic-card,.academic-link-card,.news-item,.contact-form-card,.detail-prose-card,.profile-card{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.academic-card{border-top-width:4px;box-shadow:0 8px 26px #17103b08}
+.academic-card:hover,.profile-card:hover{transform:translateY(-3px);box-shadow:0 14px 32px #17103b12}
+.news-archive .news-item{padding-bottom:22px;border-bottom:1px solid var(--line)}
+.news-image{position:relative}
+.news-image:focus-visible{outline-offset:4px}
+.archive-pagination a{min-width:44px;min-height:44px}
+.institution-breadcrumb{margin:0 0 28px;color:#e6dfc9;font-size:.82rem}
+.institution-breadcrumb a{color:inherit;text-underline-offset:3px}
+.institution-breadcrumb a:hover{color:#f1dd4b}
+.page-view-isp .institution-page-nav a{min-height:44px;display:flex;align-items:center}
+.contact-section{background:#f7f6f1}
+.contact-layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.75fr);gap:30px;align-items:start}
+.contact-form-card{padding:clamp(24px,4vw,44px);background:#fff;border:1px solid #e3e0d7;box-shadow:0 16px 42px #17103b0a}
+.contact-form-card h2,.student-login-card h2,.detail-prose-card h2,.detail-announcements h2{margin:0 0 23px;color:var(--navy);font:500 clamp(1.65rem,3vw,2.15rem)/1.2 Georgia,"Times New Roman",serif}
+.institution-form{display:grid;gap:18px}
+.form-field{display:grid;gap:7px}
+.form-field label{color:var(--navy);font-size:.85rem;font-weight:700}
+.institution-form .form-control,.institution-form input,.institution-form textarea{width:100%;min-height:48px;padding:12px 14px;border:1px solid #c9cbd2;border-radius:2px;background:#fff;color:var(--ink);font:inherit;box-shadow:none}
+.institution-form textarea.form-control{min-height:140px;resize:vertical}
+.institution-form .form-control::placeholder{color:#676979;opacity:1}
+.institution-form .form-control:focus,.institution-form input:focus,.institution-form textarea:focus{border-color:#695a9d;outline:3px solid #695a9d2e;outline-offset:1px}
+.institution-form .button{justify-self:start;border:0;cursor:pointer}
+.form-feedback{margin:0 0 18px;padding:13px 15px;border:1px solid #cdd4dc;font-size:.9rem}
+.form-feedback-error,.form-feedback-danger{border-color:#c94c4c;background:#fff3f2;color:#761f24}
+.form-feedback-success{border-color:#4c916c;background:#f0f8f2;color:#245637}
+.contact-information{position:relative;overflow:hidden;padding:clamp(25px,4vw,42px);background:linear-gradient(145deg,#24164f,#17103b);color:#f4f2f9}
+.contact-information:after{position:absolute;right:-55px;bottom:-85px;width:230px;height:230px;border:1px solid #f1dd4b60;transform:rotate(45deg);content:""}
+.contact-information .eyebrow{color:#f1dd4b}
+.contact-information h2,.detail-announcements h2{margin:0 0 30px;color:#fff;font:400 clamp(1.8rem,3.4vw,2.6rem)/1.18 Georgia,"Times New Roman",serif}
+.contact-detail{position:relative;z-index:1;padding:18px 0;border-top:1px solid #ffffff30}
+.contact-detail>span{color:#f1dd4b;font-size:.68rem;font-weight:800;letter-spacing:.15em}
+.contact-detail p{margin:8px 0 0;color:#f4f2f9;font-size:.92rem;overflow-wrap:anywhere}
+.contact-detail a,.contact-back-link{color:#fff;text-decoration-color:#f1dd4b;text-underline-offset:4px}
+.contact-back-link{position:relative;z-index:1;display:inline-flex;gap:15px;margin-top:18px;font-size:.85rem;font-weight:700}
+.student-login-section{background:#fff}
+.student-login-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,.9fr);max-width:1040px;gap:clamp(30px,7vw,90px);align-items:center}
+.student-login-aside{position:relative;min-height:360px;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding:clamp(26px,5vw,55px);background:linear-gradient(145deg,#24164f,#17103b);color:#fff}
+.student-login-aside:after{position:absolute;right:-72px;bottom:-108px;width:270px;height:270px;border:1px solid #f1dd4b55;transform:rotate(45deg);content:""}
+.student-login-aside .eyebrow{color:#f1dd4b}
+.student-login-aside h2{position:relative;z-index:1;margin:0 0 18px;font:400 clamp(2rem,4vw,3.1rem)/1.15 Georgia,"Times New Roman",serif}
+.student-login-aside h2 em{color:#e4ca18;font-weight:400}
+.student-login-aside>p:last-child{position:relative;z-index:1;max-width:400px;color:#e4e0ed}
+.login-monogram{position:absolute;top:16px;right:22px;color:#ffffff15;font:700 5rem Georgia,serif;letter-spacing:-.08em}
+.student-login-card{padding:clamp(25px,4vw,42px);border:1px solid var(--line);box-shadow:0 16px 40px #17103b0b}
+.student-login-card h2{margin-bottom:20px}
+.student-login-form .button{width:100%;justify-content:space-between;margin-top:5px}
+.login-help{margin:20px 0 0;color:var(--muted);font-size:.85rem}
+.login-help a{color:var(--navy);font-weight:700;text-underline-offset:3px}
+.detail-hero{position:relative;overflow:hidden;padding-block:clamp(55px,7vw,90px);background:linear-gradient(115deg,#17103b,#30255f);color:#fff}
+.detail-hero:after{position:absolute;top:-120px;right:7%;width:400px;height:400px;border:1px solid #f1dd4b45;transform:rotate(45deg);content:""}
+.detail-hero .institution-container{position:relative;z-index:1}
+.detail-hero .page-title{color:#fff}
+.detail-hero .page-title em{color:#e4ca18}
+.detail-hero .page-lead{color:#e8e5ef}
+.detail-content-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(220px,.6fr);gap:24px;align-items:stretch}
+.detail-prose-card,.detail-aside-card{padding:clamp(24px,4vw,38px);border:1px solid var(--line);background:#fff}
+.detail-prose-card h2{margin-bottom:15px}
+.detail-prose-card>p:last-child{margin:0;color:#4d5263;line-height:1.85;overflow-wrap:anywhere}
+.detail-aside-card{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;background:#f7f6f1;border-top:4px solid var(--gold)}
+.detail-aside-card .detail-index{color:#6d627d;font-size:.7rem;font-weight:800;letter-spacing:.16em}
+.detail-aside-card strong{margin:12px 0 0;color:var(--navy);font:400 3.8rem/1 Georgia,"Times New Roman",serif}
+.detail-aside-card>span:last-child{color:#55596a;font-size:.9rem}
+.detail-gallery-section,.detail-extra-section{background:#f7f6f1}
+.detail-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.detail-gallery-item{min-height:180px;margin:0;overflow:hidden;background:#e9e7e1}
+.detail-gallery-item img{display:block;width:100%;height:100%;min-height:180px;object-fit:cover;transition:transform .35s ease}
+.detail-gallery-item:hover img{transform:scale(1.035)}
+.detail-extra-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,.55fr);gap:28px;align-items:start}
+.detail-announcements{padding:27px;background:#fff;border:1px solid var(--line);border-top:4px solid var(--gold)}
+.detail-announcements h2{margin-bottom:16px;color:var(--navy);font-size:1.6rem}
+.detail-announcements p{margin:0;padding:14px 0;border-top:1px solid var(--line);color:#505568;line-height:1.7;overflow-wrap:anywhere}
+.profile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:16px}
+.profile-card{min-width:0;padding:22px 18px;border:1px solid var(--line);background:#fff;text-align:center}
+.profile-card img{display:block;width:92px;height:92px;margin:0 auto 16px;border-radius:50%;object-fit:cover;background:#e7e5df}
+.profile-card h3{margin:0 0 7px;color:var(--navy);font:500 1.05rem/1.35 Georgia,"Times New Roman",serif;overflow-wrap:anywhere}
+.profile-card p,.profile-card a{margin:0;color:#55596a;font-size:.82rem;overflow-wrap:anywhere}
+.profile-card a{display:inline-block;margin-top:9px;color:#40316e;text-underline-offset:3px}
+.profile-domain{margin-top:5px!important}
+.results-note{margin-top:38px;padding:26px;background:#f7f6f1;border-left:3px solid var(--gold)}
+.results-note h2{margin:0 0 10px;color:var(--navy);font:500 1.3rem Georgia,"Times New Roman",serif}
+.results-note p,.results-privacy{color:#515669;line-height:1.75}
+.results-list{columns:2;column-gap:42px;padding-left:26px}
+.results-list li{break-inside:avoid;padding:8px 10px;border-bottom:1px solid var(--line);color:#36374a}
+@media(max-width:900px){.contact-layout,.student-login-layout,.detail-extra-grid{grid-template-columns:1fr}.student-login-aside{min-height:270px}.contact-information{min-height:300px}.detail-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.contact-layout{gap:18px}.contact-form-card,.student-login-card{padding:23px 18px}.institution-form .button{width:100%;justify-content:space-between}.student-login-layout{gap:18px}.student-login-aside{min-height:250px;padding:25px 21px}.detail-content-grid{grid-template-columns:1fr}.detail-aside-card{min-height:180px}.detail-gallery-grid{grid-template-columns:1fr}.detail-gallery-item,.detail-gallery-item img{min-height:220px;height:220px}.profile-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.profile-card{padding:18px 12px}.profile-card img{width:76px;height:76px}.results-list{columns:1}.results-list-heading{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.academic-card,.academic-link-card,.news-item,.contact-form-card,.profile-card,.detail-gallery-item img{transition:none}}
+.page-title em,.intro-copy h2 em,.section-heading h2 em{color:#765900}
+.cta-inner h2 em,.hero-copy h1 em,.detail-hero .page-title em{color:#e4ca18}
+.academic-card h3{margin:13px 0 9px;color:var(--navy);font:500 1.35rem/1.35 Georgia,"Times New Roman",serif}
+
+/* Navigation plus admissions et informations pratiques. */
+.site-header{border-bottom:1px solid #eeece6;box-shadow:0 5px 22px #17103b0a}
+.nav-wrap{gap:clamp(18px,2.8vw,38px)}
+.site-navigation{gap:clamp(10px,1.2vw,19px)}
+.site-navigation>a:not(.nav-contact),.site-navigation .nav-group>summary{position:relative;min-height:48px;display:flex;align-items:center;padding-block:10px;color:#332b52;font-size:.8rem;font-weight:650;letter-spacing:.005em;text-decoration:none;white-space:nowrap}
+.site-navigation>a:not(.nav-contact)::after,.site-navigation .nav-group>summary::after{position:absolute;right:100%;bottom:3px;left:0;height:2px;background:#765900;content:"";transition:right .2s ease}
+.site-navigation>a:not(.nav-contact):hover::after,.site-navigation>a[aria-current=page]:not(.nav-contact)::after,.site-navigation .nav-group>summary:hover::after,.site-navigation .nav-group>summary[aria-current=page]::after{right:0}
+.site-navigation>a[aria-current=page]:not(.nav-contact),.site-navigation .nav-group>summary[aria-current=page]{color:#24164f}
+.site-navigation .nav-group>summary{gap:6px}
+.site-navigation .nav-group>summary span{font-size:.72rem;color:#765900}
+.site-navigation .nav-contact{min-height:46px;display:inline-flex;align-items:center;justify-content:center;padding:10px 15px;border:1px solid #e4ca18;background:#e4ca18;color:#17103b;font-size:.78rem;font-weight:800;letter-spacing:.01em;transition:background .18s ease,transform .18s ease}
+.site-navigation .nav-contact:hover{background:#f0d941;color:#17103b;transform:translateY(-1px)}
+.site-navigation .nav-contact[aria-current=page]{box-shadow:inset 0 0 0 2px #17103b30}
+.nav-toggle{width:46px;height:46px;align-items:center;justify-content:center;border:1px solid #e4e1d8;background:#fff}
+.nav-toggle:hover{border-color:#b7aa78;background:#f7f6f1}
+.nav-toggle:focus-visible{outline-offset:2px}
+.nav-toggle span{transition:transform .18s ease,opacity .18s ease}
+.nav-toggle[aria-expanded=true] span:first-child{transform:translateY(7px) rotate(45deg)}
+.nav-toggle[aria-expanded=true] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded=true] span:last-child{transform:translateY(-7px) rotate(-45deg)}
+.nav-dropdown{top:calc(100% + 9px);left:-12px;min-width:240px;padding:7px;border:1px solid #e7e4dd;box-shadow:0 18px 44px #17103b20;animation:nav-dropdown-in .16s ease both}
+.nav-dropdown a{min-height:42px;padding:10px 12px!important;border-bottom:1px solid #efeee9;color:#332b52;font-size:.79rem!important;white-space:normal}
+.nav-dropdown a:last-child{border-bottom:0}
+.nav-dropdown a:hover{background:#f7f6f1;color:#4c3d78!important}
+@keyframes nav-dropdown-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.footer-grid{grid-template-columns:1.2fr .95fr 1fr .78fr 1.2fr;gap:clamp(20px,2.5vw,34px)}
+.site-footer .footer-grid a{overflow-wrap:anywhere;text-underline-offset:3px}
+.footer-grid>div:not(:first-child) a{margin-block:8px}
+.footer-brand{display:inline-flex;align-items:center;gap:10px}
+.footer-brand img{object-fit:contain;border-radius:50%;background:#fff}
+.site-footer p{max-width:34ch;line-height:1.75}
+.admissions-section{background:#fff}
+.admissions-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.admissions-card{min-height:250px;display:flex;flex-direction:column;align-items:flex-start;padding:26px;background:#fff;border:1px solid var(--line);border-top:4px solid var(--gold);box-shadow:0 9px 28px #17103b08;transition:transform .2s ease,box-shadow .2s ease}
+.admissions-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px #17103b14}
+.admissions-card>span{color:#765900;font-size:.74rem;font-weight:800;letter-spacing:.14em}
+.admissions-card h3{margin:15px 0 10px;color:var(--navy);font:500 1.28rem/1.35 Georgia,"Times New Roman",serif}
+.admissions-card p{margin:0 0 20px;color:#56566a;font-size:.9rem;line-height:1.75}
+.admissions-card a{display:inline-flex;gap:12px;align-items:center;margin-top:auto;color:#33245f;font-size:.84rem;font-weight:750;text-decoration:none;text-underline-offset:4px}
+.admissions-card a:hover{text-decoration:underline}
+.admissions-note{margin-top:24px}
+.policy-content{background:#fff}
+.policy-notice{display:flex;align-items:flex-start;gap:15px;margin:0 0 28px;padding:19px 21px;border:1px solid #e1d7b7;border-left:4px solid #765900;background:#faf8f1}
+.policy-notice-mark{width:28px;height:28px;flex:0 0 28px;display:grid;place-items:center;border-radius:50%;background:#24164f;color:#fff;font:700 .9rem Georgia,serif}
+.policy-notice p{margin:0;color:#454557;line-height:1.7}
+.policy-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.65fr);gap:25px;align-items:start}
+.policy-main{display:grid;gap:17px}
+.policy-card{padding:clamp(23px,3.8vw,36px);border:1px solid var(--line);background:#fff}
+.policy-card .eyebrow{margin-bottom:10px}
+.policy-card h2{margin:0 0 16px;color:var(--navy);font:500 clamp(1.45rem,2.5vw,1.9rem)/1.25 Georgia,"Times New Roman",serif}
+.policy-card p:not(.eyebrow){color:#505365;line-height:1.8}
+.policy-card p:last-child{margin-bottom:0}
+.policy-contact{position:sticky;top:25px;padding:27px;background:linear-gradient(150deg,#24164f,#17103b);color:#f4f2f9}
+.policy-contact .eyebrow{color:#f1dd4b}
+.policy-contact h2{margin:0 0 12px;color:#fff;font:400 1.65rem/1.25 Georgia,"Times New Roman",serif}
+.policy-contact p{color:#e6e3ed;font-size:.9rem;line-height:1.75}
+.policy-contact>a{display:block;margin-top:16px;color:#fff;overflow-wrap:anywhere;text-underline-offset:4px}
+.policy-contact .policy-contact-link{padding-top:16px;border-top:1px solid #ffffff35;color:#f1dd4b;font-weight:700;text-decoration:none}
+.policy-contact-link span{padding-left:8px}
+@media(max-width:1180px){.nav-wrap{position:relative}.nav-toggle{display:flex;flex-direction:column;gap:5px;cursor:pointer}.site-navigation{display:none;position:absolute;top:calc(100% + 1px);left:50%;right:auto;width:100vw;transform:translateX(-50%);padding:14px max(24px,calc((100vw - 1160px)/2)) 22px;background:#fff;border-top:1px solid #f0eee8;box-shadow:0 18px 28px #17103b1a;align-items:stretch;gap:0}.site-navigation.is-open{display:flex;flex-direction:column}.site-navigation>a:not(.nav-contact){min-height:46px;padding:10px 0;border-bottom:1px solid #efeee9}.site-navigation>a:not(.nav-contact)::after,.site-navigation .nav-group>summary::after{display:none}.site-navigation .nav-group{align-self:stretch;border-bottom:1px solid #efeee9}.site-navigation .nav-group>summary{min-height:46px;padding:10px 0}.site-navigation .nav-contact{align-self:flex-start;margin-top:12px;padding-inline:18px}.nav-dropdown{position:static;min-width:0;margin:0 0 9px 9px;padding:0 0 0 10px;border:0;border-left:2px solid #d6c18c;box-shadow:none;animation:none}.nav-dropdown a{padding:9px 10px!important;border:0;font-size:.83rem!important}.footer-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 20px}.admissions-grid{grid-template-columns:1fr}.admissions-card{min-height:0}.policy-layout{grid-template-columns:1fr}.policy-contact{position:static}}
+@media(max-width:520px){.footer-grid{grid-template-columns:1fr}.footer-brand{font-size:1.3rem}.policy-notice{padding:16px}.policy-card{padding:22px 18px}}
+@media(prefers-reduced-motion:reduce){.nav-dropdown,.nav-toggle span,.site-navigation .nav-contact,.admissions-card{animation:none;transition:none}}
+
+/* Palette plus expressive et en-tête toujours accessible au défilement. */
+:root{--surface-lavender:#f0edf7;--surface-lavender-light:#f7f5fb;--surface-blue:#edf3f8;--surface-gold:#f8f3e5;--line-color:#dfd9eb}
+html{scroll-padding-top:142px}
+.site-header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 8px 28px #17103b1c}
+.utility-bar{background:#17103b}
+.nav-wrap{background:#fff}
+.site-navigation>a[aria-current=page]:not(.nav-contact),.site-navigation .nav-group>summary[aria-current=page]{color:#24164f}
+.site-navigation>a:not(.nav-contact)::after,.site-navigation .nav-group>summary::after{background:#e4ca18}
+.intro-section,.news-section,.academic-content,.news-archive,.contact-section,.student-login-section,.policy-content,.admissions-section,.article-layout{background:var(--surface-lavender)}
+.presentation-video,.quick-access,.detail-gallery-section,.detail-extra-section{background:var(--surface-gold)}
+.program-section,.institution-page,.student-dashboard,.detail-content{background:var(--surface-blue)}
+.page-intro{background:linear-gradient(118deg,#eeebf6 0%,#f7f3e5 100%);border-bottom:1px solid #ded8eb}
+.academic-intro{background:linear-gradient(118deg,#ece9f4 0%,#f8f3e5 100%)}
+.hero-copy{max-width:680px}
+.intro-section .institution-facts{background:var(--surface-gold);border:1px solid #e7ddbd;border-top:4px solid #e4ca18}
+.program-section .section-heading,.news-section .section-heading,.quick-access .section-heading{margin-bottom:40px}
+.academic-content>.institution-container,.news-archive>.institution-container{position:relative}
+.academic-card,.academic-link-card{border-color:#ded9e9;background:#fff;box-shadow:0 10px 30px #24164f10}
+.academic-card{border-top-color:#e4ca18}
+.academic-link-card{border-top-color:#e4ca18}
+.news-item{overflow:hidden;background:#fff;border:1px solid #dfd9eb;box-shadow:0 10px 28px #24164f0d;transition:transform .2s ease,box-shadow .2s ease}
+.news-item:hover{transform:translateY(-3px);box-shadow:0 17px 36px #24164f18}
+.news-item>.news-date,.news-item>h2,.news-item>h3,.news-item>p:not(.news-date),.news-item>.text-link{margin-right:20px;margin-left:20px}
+.news-item>.news-date{margin-top:17px}
+.news-item>h3,.news-item>h2{margin-bottom:10px}
+.news-item>p:not(.news-date){margin-bottom:16px}
+.news-item>.text-link{margin-bottom:20px}
+.news-archive .news-item{padding-bottom:0;border:1px solid #dfd9eb}
+.news-archive .news-item h2{margin-top:0}
+.news-image{background:#e8e4f0}
+.news-image img{filter:saturate(.94)}
+.archive-pagination a{border-color:#d8d2e5;background:#fff}
+.contact-layout .contact-form-card,.student-login-card,.policy-card{border-color:#dfd9eb;box-shadow:0 16px 42px #24164f12}
+.contact-information,.student-login-aside,.policy-contact{background:linear-gradient(145deg,#352568 0%,#17103b 78%)}
+.admissions-card{border-color:#ded9e9;border-top-color:#e4ca18;box-shadow:0 10px 28px #24164f10}
+.policy-notice{background:#fbf7e8;border-color:#e5d9b3;border-left-color:#a17b17}
+.detail-prose-card,.detail-aside-card{box-shadow:0 10px 30px #24164f0d}
+.detail-announcements{box-shadow:0 10px 28px #24164f0c}
+.profile-card{border-color:#dfd9eb;box-shadow:0 8px 24px #24164f0a}
+.results-note{background:#fbf7e8;border-left-color:#b28b20}
+.results-intro{position:relative;overflow:hidden;padding-block:clamp(58px,8vw,100px);background:radial-gradient(ellipse at 92% 18%,#5a477f 0,transparent 34%),linear-gradient(116deg,#17103b 0%,#261a50 58%,#352568 100%)}
+.results-intro:after{position:absolute;right:-96px;bottom:-230px;width:430px;height:430px;border:1px solid #ffffff20;border-radius:50%;box-shadow:0 0 0 44px #ffffff08,0 0 0 92px #ffffff06;content:"";pointer-events:none}
+.results-hero{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);align-items:center;gap:clamp(35px,8vw,120px)}
+.results-hero-copy{max-width:700px}.results-eyebrow-mark{display:inline-block;width:8px;height:8px;margin-right:8px;border-radius:50%;background:#e4ca18;box-shadow:0 0 0 5px #e4ca1826;vertical-align:1px}
+.results-intro .page-title{margin:14px 0 17px;font-size:clamp(2.7rem,6vw,5rem);letter-spacing:-.035em}.results-intro .page-title em{color:#f0dc50;font-style:normal}
+.results-intro .page-lead{max-width:620px;margin:0;font-size:1.02rem;line-height:1.8}
+.results-path{padding:21px 23px;border:1px solid #ffffff26;background:#ffffff0a;backdrop-filter:blur(8px)}
+.results-path>p{margin:0 0 12px;color:#eadc8e;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.results-path ol{display:grid;gap:0;margin:0;padding:0;list-style:none}.results-path li{display:flex;align-items:center;gap:13px;padding:11px 0;border-top:1px solid #ffffff1a;color:#fff;font-size:.88rem}
+.results-path li span{color:#e4ca18;font-size:.69rem;font-weight:700;letter-spacing:.08em}
+.results-archive{padding-block:clamp(52px,7vw,86px);background:linear-gradient(180deg,#f1eef8 0%,#f8f6fb 100%)}
+.results-archive-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}
+.results-archive-heading .eyebrow{margin:0 0 9px}.results-archive-heading h2{margin:0;color:var(--navy);font:500 clamp(1.8rem,3vw,2.45rem)/1.2 Georgia,"Times New Roman",serif}.results-archive-heading h2 em{color:#765900;font-weight:400}
+.results-archive-heading>div>p:last-child{margin:10px 0 0;color:var(--muted);font-size:.9rem}
+.results-count{flex:none;padding:9px 13px;border:1px solid #ded8eb;background:#fff;color:#4e4960;font-size:.78rem}
+.results-year-grid{grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:15px}
+.results-year-card{min-height:128px;padding:20px 22px;border:1px solid #dfd9eb;border-top:3px solid #e4ca18;box-shadow:0 7px 20px #24164f09}
+.results-year-card strong{font-size:1.16rem}.results-year-card b{right:18px;top:auto;bottom:18px;color:#24164f;font-size:1.2rem;transition:transform .2s}
+.results-year-card:hover b{transform:translateX(4px)}
+.results-empty{display:flex;align-items:center;gap:22px;padding:clamp(24px,5vw,42px);border:1px solid #dfd9eb;background:#fff;box-shadow:0 12px 30px #24164f0b}
+.results-empty-icon{width:58px;height:58px;flex:none;display:grid;place-items:center;border-radius:50%;background:#f3effa;color:#5a477f}
+.results-empty-icon svg{width:29px;height:29px;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.7}
+.results-empty-label{margin:0 0 6px;color:#756425;font-size:.7rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase}
+.results-empty h3{margin:0 0 7px;color:var(--navy);font:500 1.38rem/1.35 Georgia,"Times New Roman",serif}
+.results-empty>div>p:last-child{margin:0;color:var(--muted);font-size:.9rem;line-height:1.65}
+.results-note{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:32px;padding:22px 26px;border:1px solid #e7ddbd;border-left:4px solid #b28b20;background:#fbf7e8}
+.results-note .eyebrow{margin:0 0 7px}.results-note h2{margin:0 0 7px;font-size:1.25rem}.results-note p:not(.eyebrow){margin:0;color:#5f5b4f;font-size:.86rem;line-height:1.65}
+.results-contact-link{display:inline-flex;min-height:46px;align-items:center;justify-content:center;gap:12px;flex:none;padding:10px 15px;background:#24164f;color:#fff;text-decoration:none;font-size:.83rem;font-weight:650;transition:background .2s}
+.results-contact-link:hover{background:#3a2b68;color:#fff}.results-contact-link:focus-visible,.results-year-card:focus-visible{outline:3px solid #b28b20;outline-offset:3px}
+@media(max-width:760px){.results-hero{grid-template-columns:1fr;gap:28px}.results-path{max-width:440px}.results-intro:after{right:-220px}.results-archive-heading{align-items:flex-start;flex-direction:column;gap:14px}}
+@media(max-width:560px){.results-intro{padding-block:50px 54px}.results-intro .page-title{font-size:clamp(2.55rem,12vw,3.6rem)}.results-intro .page-lead{font-size:.94rem}.results-path{padding:16px 18px}.results-empty{align-items:flex-start;gap:15px;padding:21px 18px}.results-empty-icon{width:46px;height:46px}.results-empty h3{font-size:1.2rem}.results-note{align-items:flex-start;flex-direction:column;margin-top:24px;padding:19px}.results-contact-link{width:100%}}
+
+/* Identité commune aux pages publiques : violets institutionnels, or et surfaces claires. */
+:root{--brand-violet:#24164f;--brand-violet-deep:#17103b;--brand-gold:#e4ca18;--brand-lilac:#f0edf7;--brand-paper:#fbf9f2;--brand-border:#dfd9eb}
+#contenu>.page-intro:not(.results-intro){position:relative;isolation:isolate;overflow:hidden;padding-block:clamp(54px,7vw,88px);border:0;border-bottom:1px solid #ffffff20;background:radial-gradient(ellipse at 92% 12%,#59477d 0,transparent 34%),linear-gradient(116deg,var(--brand-violet-deep) 0%,var(--brand-violet) 62%,#352568 100%);color:#fff}
+#contenu>.page-intro:not(.results-intro):after{position:absolute;z-index:-1;right:-92px;bottom:-190px;width:360px;height:360px;border:1px solid #ffffff20;border-radius:50%;box-shadow:0 0 0 42px #ffffff08,0 0 0 84px #ffffff05;content:"";pointer-events:none}
+#contenu>.page-intro:not(.results-intro)>.institution-container{position:relative;z-index:1}
+#contenu>.page-intro:not(.results-intro) .eyebrow,#contenu>.page-intro:not(.results-intro) .eyebrow-dark{color:#f1dd4b}
+#contenu>.page-intro:not(.results-intro) .page-title{margin:12px 0 14px;color:#fff;font:400 clamp(2.3rem,5vw,4rem)/1.12 Georgia,"Times New Roman",serif;letter-spacing:-.025em}
+#contenu>.page-intro:not(.results-intro) .page-title em{color:#f1dd4b;font-style:normal;font-weight:400}
+#contenu>.page-intro:not(.results-intro) .page-lead{max-width:720px;margin:0;color:#e7e5ef;font-size:.98rem;line-height:1.8}
+#contenu>.page-intro:not(.results-intro) .button-outline{border-color:#ffffff80;color:#fff}
+#contenu>.page-intro:not(.results-intro) .publication-count{border:1px solid #ffffff36;background:#ffffff0c;box-shadow:none;backdrop-filter:blur(8px)}
+#contenu>.page-intro:not(.results-intro) .publication-count>span{color:#f1dd4b}
+#contenu>.page-intro:not(.results-intro) .publication-count>strong{color:#fff}
+#contenu>.page-intro:not(.results-intro) .publication-count>small{color:#e7e5ef}
+#contenu>.page-intro:not(.results-intro) .publication-count:after{border-color:#f1dd4b60}
+#contenu>.section-space:not(.page-intro){position:relative}
+#contenu>.academic-content,#contenu>.news-archive,#contenu>.publication-section,#contenu>.event-archive,#contenu>.policy-content,#contenu>.contact-section,#contenu>.admissions-section,#contenu>.student-dashboard{background:linear-gradient(180deg,#f0edf7 0%,#f8f6fb 100%)}
+#contenu>.detail-content,#contenu>.article-layout{background:#f5f3fa}
+#contenu>.detail-gallery-section,#contenu>.detail-extra-section,#contenu>.presentation-video,#contenu>.quick-access{background:linear-gradient(180deg,#f8f3e5 0%,#fbf9f2 100%)}
+#contenu .section-heading h2,#contenu .publication-grid-heading h2,#contenu .policy-card h2{color:var(--brand-violet);font-family:Georgia,"Times New Roman",serif}
+#contenu .academic-card,#contenu .academic-link-card,#contenu .news-item,#contenu .publication-card,#contenu .event-card,#contenu .admissions-card,#contenu .policy-card,#contenu .contact-form-card,#contenu .student-login-card,#contenu .detail-prose-card,#contenu .profile-card{border-color:var(--brand-border);background:#fff;box-shadow:0 10px 30px #24164f0d}
+#contenu .academic-card,#contenu .academic-link-card,#contenu .admissions-card{border-top:3px solid var(--brand-gold)}
+#contenu .academic-card:hover,#contenu .academic-link-card:hover,#contenu .admissions-card:hover,#contenu .news-item:hover,#contenu .event-card:hover{box-shadow:0 16px 36px #24164f17}
+#contenu .content-note,#contenu .publication-empty{padding:24px;border:1px solid var(--brand-border);border-left:4px solid #b28b20;background:#fff;color:#4f4b61;box-shadow:0 8px 24px #24164f08}
+#contenu .button-gold{background:var(--brand-gold);color:var(--brand-violet-deep)}
+#contenu .button-gold:hover{background:#f0d941;color:var(--brand-violet-deep)}
+#contenu input:not([type=checkbox]):not([type=radio]):not([type=hidden]),#contenu select,#contenu textarea{border-color:#d7d1e5;border-radius:2px;background-color:#fff}
+#contenu input:focus-visible,#contenu select:focus-visible,#contenu textarea:focus-visible,#contenu button:focus-visible,#contenu a:focus-visible{outline:3px solid #b28b20;outline-offset:3px}
+#contenu .archive-pagination a{border-color:#d8d2e5;background:#fff;color:var(--brand-violet)}
+#contenu .archive-pagination a[aria-current=page],#contenu .archive-pagination a:hover{border-color:var(--brand-violet);background:var(--brand-violet);color:#fff}
+@media(max-width:650px){#contenu>.page-intro:not(.results-intro){padding-block:48px 54px}#contenu>.page-intro:not(.results-intro) .page-title{font-size:clamp(2.25rem,10vw,3.2rem)}#contenu>.page-intro:not(.results-intro) .page-lead{font-size:.92rem}#contenu>.page-intro:not(.results-intro):after{right:-220px}}
+.student-panel{border-color:#dfd9eb;box-shadow:0 8px 26px #24164f0a}
+.page-title em,.intro-copy h2 em,.section-heading h2 em{color:#765900}
+.cta-inner h2 em,.hero-copy h1 em,.detail-hero .page-title em{color:#f1dd4b}
+@media(max-width:650px){html{scroll-padding-top:82px}.utility-bar{display:none}.site-header{box-shadow:0 6px 20px #17103b1c}.nav-wrap{min-height:72px}.site-navigation{max-height:calc(100vh - 72px);overflow-y:auto}}
+@media(prefers-reduced-motion:reduce){.news-item{transition:none}}
+
+/* Archives éditoriales et agenda des activités. */
+.publication-intro-grid{display:grid;grid-template-columns:minmax(0,1fr) 245px;gap:32px;align-items:center}
+.publication-count{position:relative;overflow:hidden;min-height:150px;display:flex;flex-direction:column;justify-content:center;padding:21px 24px;background:linear-gradient(145deg,#352568,#17103b);color:#fff;box-shadow:0 14px 32px #24164f1c}
+.publication-count:after{position:absolute;right:-48px;bottom:-72px;width:150px;height:150px;border:1px solid #f1dd4b65;transform:rotate(45deg);content:""}
+.publication-count>span,.publication-count>small{position:relative;z-index:1;color:#f1dd4b;font-size:.68rem;font-weight:800;letter-spacing:.14em}
+.publication-count>strong{position:relative;z-index:1;color:#fff;font:400 3.1rem/1.1 Georgia,"Times New Roman",serif}
+.publication-count>small{color:#e6e0f0;font-weight:500;letter-spacing:.02em}
+.publication-section{background:#f0edf7}
+.publication-switch{display:flex;gap:8px;margin:0 0 28px;padding:6px;border:1px solid #ded8eb;background:#fff;width:fit-content}
+.publication-switch a{min-height:44px;display:inline-flex;align-items:center;gap:12px;padding:9px 16px;color:#413957;font-size:.86rem;font-weight:700;text-decoration:none;transition:background .18s,color .18s}
+.publication-switch a span{color:#766b8d;font-size:.75rem}
+.publication-switch a[aria-current=page]{background:#24164f;color:#fff}
+.publication-switch a[aria-current=page] span{color:#f1dd4b}
+.publication-featured{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);min-height:380px;overflow:hidden;background:#fff;border:1px solid #ddd7e9;box-shadow:0 18px 44px #24164f12}
+.publication-featured-image,.publication-featured-placeholder{position:relative;display:block;min-height:340px;overflow:hidden;background:linear-gradient(145deg,#dcd6ec,#f6f2e4)}
+.publication-featured-image img{display:block;width:100%;height:100%;min-height:340px;object-fit:cover;transition:transform .55s ease}
+.publication-featured-image:hover img{transform:scale(1.035)}
+.publication-featured-placeholder:before,.publication-card-placeholder:before{position:absolute;top:15%;right:8%;width:62%;aspect-ratio:1;border:1px solid #24164f35;transform:rotate(45deg);content:""}
+.publication-featured-placeholder:after,.publication-card-placeholder:after{position:absolute;top:23%;right:16%;width:46%;aspect-ratio:1;border:1px solid #b59a3c75;transform:rotate(45deg);content:""}
+.publication-featured-placeholder span,.publication-card-placeholder span{position:absolute;z-index:1;right:18px;bottom:16px;color:#24164f;font:600 .72rem Georgia,serif;letter-spacing:.17em}
+.publication-featured-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(28px,5vw,58px)}
+.publication-kicker{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 18px;color:#625874;font-size:.72rem}
+.publication-kicker>span{padding:6px 9px;background:#e4ca18;color:#211940;font-size:.65rem;font-weight:850;letter-spacing:.1em}
+.publication-kicker time{color:#5c5968}
+.publication-featured-copy h2{margin:0 0 16px;color:#24164f;font:500 clamp(1.75rem,3.2vw,2.55rem)/1.18 Georgia,"Times New Roman",serif;letter-spacing:-.02em}
+.publication-featured-copy h2 a{color:inherit;text-decoration:none;text-decoration-color:#b39a35;text-underline-offset:5px}
+.publication-featured-copy h2 a:hover{text-decoration:underline}
+.publication-featured-copy>p:not(.publication-kicker){margin:0 0 24px;color:#565365;font-size:.94rem;line-height:1.8}
+.publication-featured-copy .button{margin-top:4px}
+.publication-grid-heading{display:flex;align-items:end;justify-content:space-between;margin:46px 0 22px}
+.publication-grid-heading h2{margin:0;color:#24164f;font:400 clamp(1.7rem,3vw,2.25rem)/1.2 Georgia,"Times New Roman",serif}
+.publication-grid-heading h2 em{color:#765900}
+.publication-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.publication-card{min-width:0;overflow:hidden;background:#fff;border:1px solid #ded8eb;box-shadow:0 10px 28px #24164f0d;transition:transform .2s ease,box-shadow .2s ease}
+.publication-card:hover{transform:translateY(-3px);box-shadow:0 17px 36px #24164f17}
+.publication-card .news-image,.publication-card-placeholder{height:205px;min-height:205px}
+.publication-card .news-image img{height:100%;min-height:205px;object-fit:cover}
+.publication-card-body{display:flex;min-height:245px;flex-direction:column;align-items:flex-start;padding:19px 20px 21px}
+.publication-card-body .news-date{margin:0 0 9px;color:#705817}
+.publication-card-body h3{margin:0 0 10px;color:#24164f;font:500 1.22rem/1.35 Georgia,"Times New Roman",serif}
+.publication-card-body h3 a{color:inherit;text-decoration:none;text-underline-offset:4px}
+.publication-card-body h3 a:hover{text-decoration:underline}
+.publication-card-body>p:not(.news-date){margin:0 0 15px;color:#565365;font-size:.88rem;line-height:1.7}
+.publication-card-body .text-link{margin-top:auto}
+.publication-card-placeholder{position:relative;overflow:hidden;background:linear-gradient(145deg,#e6e1f0,#faf5e4)}
+.publication-empty{max-width:680px;margin:0 auto;padding:clamp(34px,6vw,64px);background:#fff;border:1px solid #ded8eb;border-top:4px solid #e4ca18;text-align:center;box-shadow:0 18px 44px #24164f10}
+.publication-empty-mark{width:68px;height:68px;display:grid;place-items:center;margin:0 auto 22px;border:1px solid #cfc7df;border-radius:50%;color:#24164f;font:700 1rem Georgia,serif;letter-spacing:.08em}
+.publication-empty h2{margin:0 0 10px;color:#24164f;font:500 clamp(1.6rem,3vw,2rem) Georgia,"Times New Roman",serif}
+.publication-empty>p:not(.eyebrow){margin:0 auto 20px;color:#5a5868}
+.event-archive{background:#f8f3e5}
+.event-count{background:linear-gradient(145deg,#24164f,#17103b)}
+.event-stream{display:grid;gap:15px}
+.event-card{display:grid;grid-template-columns:104px 230px minmax(0,1fr);min-height:205px;overflow:hidden;background:#fff;border:1px solid #e4decf;box-shadow:0 10px 26px #24164f0c;transition:transform .2s ease,box-shadow .2s ease}
+.event-card:hover{transform:translateY(-2px);box-shadow:0 16px 34px #24164f16}
+.event-date-block{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px 9px;background:#24164f;color:#fff;text-align:center}
+.event-date-block>span{color:#fff;font:400 2.8rem/.95 Georgia,"Times New Roman",serif}
+.event-date-block>small{margin-top:6px;color:#f1dd4b;font-size:.75rem;font-weight:750;letter-spacing:.1em}
+.event-date-block>b{margin-top:12px;color:#d9d2e7;font-size:.55rem;letter-spacing:.11em}
+.event-card-image{min-height:205px;display:block;overflow:hidden;background:#e5e0ee}
+.event-card-image img{display:block;width:100%;height:100%;min-height:205px;object-fit:cover;transition:transform .35s ease}
+.event-card:hover .event-card-image img{transform:scale(1.035)}
+.event-card-placeholder{position:relative;display:grid;place-items:center;background:linear-gradient(145deg,#e6e1f0,#faf5e4)}
+.event-card-placeholder:before{position:absolute;width:140px;height:140px;border:1px solid #24164f45;transform:rotate(45deg);content:""}
+.event-card-placeholder span{position:relative;z-index:1;color:#24164f;font:700 .9rem/1.45 Georgia,serif;letter-spacing:.12em;text-align:center}
+.event-card-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:22px clamp(22px,3vw,38px)}
+.event-card-overline{margin:0 0 8px;color:#765900;font-size:.69rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.event-card-overline span{padding-inline:4px;color:#a19163}
+.event-card-copy h2{margin:0 0 8px;color:#24164f;font:500 clamp(1.2rem,2vw,1.55rem)/1.3 Georgia,"Times New Roman",serif}
+.event-card-copy h2 a{color:inherit;text-decoration:none;text-underline-offset:4px}
+.event-card-copy h2 a:hover{text-decoration:underline}
+.event-card-copy>p:not(.event-card-overline){margin:0 0 12px;color:#565365;font-size:.88rem;line-height:1.7}
+.event-read-link{display:inline-flex;gap:12px;align-items:center;margin-top:auto;color:#33245f;font-size:.82rem;font-weight:800;text-decoration:none}
+.event-read-link:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:900px){.publication-intro-grid{grid-template-columns:minmax(0,1fr) 205px;gap:22px}.publication-featured{grid-template-columns:1fr 1fr;min-height:330px}.publication-featured-image,.publication-featured-placeholder,.publication-featured-image img{min-height:330px}.publication-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.event-card{grid-template-columns:82px 180px minmax(0,1fr)}.event-date-block>span{font-size:2.3rem}}
+@media(max-width:650px){.publication-intro-grid{grid-template-columns:1fr;gap:22px}.publication-count{min-height:125px}.publication-switch{width:100%;display:grid;grid-template-columns:1fr 1fr}.publication-switch a{justify-content:center;padding-inline:8px}.publication-featured{grid-template-columns:1fr}.publication-featured-image,.publication-featured-placeholder,.publication-featured-image img{min-height:245px;height:245px}.publication-featured-copy{padding:25px 21px}.publication-featured-copy .button{width:100%;justify-content:space-between}.publication-grid-heading{margin:34px 0 18px}.publication-grid{grid-template-columns:1fr;gap:16px}.publication-card-body{min-height:0}.event-card{grid-template-columns:72px minmax(0,1fr)}.event-date-block{grid-column:1;grid-row:1;min-height:110px}.event-date-block>span{font-size:2rem}.event-date-block>b{margin-top:8px;font-size:.48rem}.event-card-image{grid-column:2;grid-row:1;min-height:110px;height:110px}.event-card-copy{grid-column:1/-1;grid-row:2;padding:20px}.event-card-copy h2{font-size:1.22rem}.event-card-copy>p:not(.event-card-overline){font-size:.86rem}}
+@media(prefers-reduced-motion:reduce){.publication-featured-image img,.publication-card,.event-card,.event-card-image img{transition:none}}
+
+/* Le contrôle du menu reste confortable au toucher sur les petits écrans. */
+.nav-toggle{min-width:44px;min-height:44px}
+.eyebrow-dark,.site-navigation a[aria-current=page],.site-navigation .nav-group>summary:hover,.site-navigation .nav-group>summary[aria-current=page],.news-date,.text-link span,.program-number,.section-kicker span:first-child{color:#765900}
+.site-navigation a:hover{color:#765900}
+.governance-section{background:linear-gradient(180deg,#f0edf7 0%,#f8f6fb 100%)}
+.governance-heading{align-items:end}.governance-heading>div>p:last-child{max-width:650px;margin:11px 0 0;color:var(--muted);font-size:.91rem;line-height:1.7}
+.governance-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.institution-page-content .governance-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:24px}.institution-page-content .governance-card{padding:18px 16px}
+.governance-card{min-width:0;min-height:220px;padding:20px 18px;border:1px solid #dfd9eb;border-top:3px solid #e4ca18;background:#fff;box-shadow:0 10px 28px #24164f0b;transition:transform .2s ease,box-shadow .2s ease}
+.governance-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px #24164f16}
+.governance-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:23px}
+.governance-photo-trigger{position:relative;display:block;width:108px;height:108px;flex:0 0 108px;padding:0;border:0;border-radius:50%;background:transparent;cursor:zoom-in}.governance-photo{width:100%;height:100%;display:block;object-fit:cover;object-position:center 30%;border:3px solid #e7e1f0;border-radius:50%;background:#f3eff9;box-shadow:0 5px 14px #24164f1a;transition:transform .25s ease,box-shadow .25s ease}.governance-photo-trigger:hover .governance-photo,.governance-photo-trigger:focus-visible .governance-photo{transform:scale(1.06);box-shadow:0 10px 25px #24164f35}.governance-card-lead .governance-photo{border-color:#f1dd4b}.governance-zoom-icon{position:absolute;right:2px;bottom:2px;width:29px;height:29px;display:grid;place-items:center;border:2px solid #fff;border-radius:50%;background:#24164f;color:#fff;font-size:.8rem;box-shadow:0 2px 8px #100c2840}.governance-card-lead .governance-zoom-icon{background:#e4ca18;color:#24164f}.governance-photo-trigger:focus-visible{outline:3px solid #765900;outline-offset:5px}.governance-empty{margin:28px 0 0;padding:22px 24px;border:1px dashed #cfc7df;border-radius:10px;background:#ffffffa6;color:#625a75;font-size:.92rem}
+.governance-lightbox{position:fixed;max-width:min(92vw,1000px);max-height:92vh;width:max-content;padding:18px;border:1px solid #ffffff40;border-radius:14px;background:#17103b;color:#fff;box-shadow:0 30px 100px #08051dcc;overflow:visible}.governance-lightbox::backdrop{background:#100c28db;backdrop-filter:blur(5px)}.governance-lightbox img{display:block;max-width:min(88vw,960px);max-height:78vh;width:auto;height:auto;object-fit:contain;border-radius:8px}.governance-lightbox p{margin:12px 45px 0 4px;color:#f4f0fc;font-size:.92rem}.governance-lightbox-close{position:absolute;z-index:1;top:8px;right:8px;width:42px;height:42px;display:grid;place-items:center;border:1px solid #ffffff55;border-radius:50%;background:#24164f;color:#fff;font-size:1rem}.governance-lightbox-close:hover,.governance-lightbox-close:focus-visible{background:#e4ca18;color:#24164f;outline:2px solid #fff;outline-offset:2px}
+.governance-index{color:#837c90;font-size:.68rem;font-weight:750;letter-spacing:.14em}
+.governance-seal{width:48px;height:48px;display:grid;place-items:center;border:1px solid #ded8eb;border-radius:50%;background:#f3eff9;color:#38286a;font:500 .9rem Georgia,"Times New Roman",serif;letter-spacing:.04em}
+.governance-role{min-height:37px;margin:0 0 9px;color:#756425;font-size:.68rem;font-weight:800;line-height:1.45;letter-spacing:.08em;text-transform:uppercase}
+.governance-card h3{margin:0;color:#24164f;font:500 1.05rem/1.4 Georgia,"Times New Roman",serif;overflow-wrap:anywhere}
+.governance-member-link{display:inline-flex;align-items:center;gap:8px;margin-top:15px;color:#4b3678;font-size:.82rem;font-weight:750;text-decoration:none;text-underline-offset:4px;transition:gap .18s ease,color .18s ease}.governance-member-link:hover{gap:12px;color:#765900;text-decoration:underline}.governance-member-link:focus-visible{outline:3px solid #b59f40;outline-offset:4px;border-radius:2px}.governance-card-lead .governance-member-link{color:#f1dd4b}.governance-card-lead .governance-member-link:hover{color:#fff}
+.governance-description{margin-top:13px;color:#665f72;font-size:.83rem;line-height:1.7;overflow-wrap:anywhere}.governance-description p{margin:0 0 .55em}.governance-description p:last-child{margin-bottom:0}.governance-description h2,.governance-description h3{margin:.8em 0 .35em;color:inherit;font-family:inherit;font-size:.95rem;font-weight:700;line-height:1.35}.governance-description ul,.governance-description ol{padding-left:1.2em;margin:.45em 0}.governance-description blockquote{margin:.6em 0;padding-left:.75em;border-left:3px solid #b59f40;color:#76672d}.governance-card-lead .governance-description{color:#f0edf7}.governance-card-lead .governance-description h2,.governance-card-lead .governance-description h3{color:#fff}.governance-card-lead .governance-description blockquote{border-color:#f1dd4b;color:#f5e895}.governance-description a{color:#5c477f;text-decoration:underline;text-underline-offset:2px}.governance-card-lead .governance-description a{color:#f1dd4b}
+.governance-reading-section{background:linear-gradient(180deg,#f3f1f8 0%,#fff 100%)}.governance-reading-list{display:grid;gap:26px}.governance-reading-card{display:grid;grid-template-columns:minmax(220px,34%) minmax(0,1fr);align-items:center;gap:clamp(24px,5vw,68px);padding:clamp(22px,4vw,48px);border:1px solid #e3deeb;border-radius:14px;background:#fff;box-shadow:0 16px 45px #24164f0d;scroll-margin-top:110px}.governance-reading-card:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(220px,34%)}.governance-reading-card:nth-child(even) .governance-reading-portrait{order:2}.governance-reading-portrait{display:grid;place-items:center}.governance-reading-portrait .governance-photo-trigger{width:min(100%,330px);height:auto;aspect-ratio:4/5;flex-basis:auto;border-radius:10px;cursor:zoom-in}.governance-reading-portrait .governance-photo{object-position:center 28%;border:0;border-radius:10px;box-shadow:0 12px 30px #24164f20}.governance-reading-portrait .governance-zoom-icon{right:12px;bottom:12px;width:40px;height:40px;border:2px solid #fff;background:#24164f;color:#fff;font-size:1rem}.governance-reading-copy h2{margin:.3em 0 .55em;color:#24164f;font:500 clamp(1.6rem,3vw,2.4rem)/1.18 Georgia,"Times New Roman",serif}.governance-reading-copy .governance-role{min-height:0;margin:12px 0 0;color:#765900;font-size:.76rem;letter-spacing:.1em}.governance-reading-copy .governance-index{font-size:.75rem}.governance-reading-copy .governance-description{max-width:760px;margin-top:18px;color:#4f4b5b;font-size:1rem;line-height:1.85}.governance-reading-copy .governance-description p{margin:0 0 1em}.governance-reading-copy .governance-description h2,.governance-reading-copy .governance-description h3{margin:1em 0 .45em;color:#24164f;font-size:1.12rem}.governance-reading-copy .governance-description ul,.governance-reading-copy .governance-description ol{padding-left:1.4em;margin:.6em 0 1em}.governance-reading-copy .governance-description blockquote{margin:1em 0;padding:.25em 0 .25em 1em;border-left:3px solid #e4ca18;color:#625329}.governance-reading-copy .governance-description a{color:#38286a}.governance-reading-copy .content-note{color:#777282;font-style:italic}
+.governance-card-lead{background:linear-gradient(150deg,#352568 0%,#17103b 100%);border-color:#352568;border-top-color:#f1dd4b}
+.governance-card-lead .governance-index{color:#e8e4f1}.governance-card-lead .governance-seal{border-color:#ffffff42;background:#ffffff12;color:#f1dd4b}
+.governance-card-lead .governance-role{color:#f1dd4b}.governance-card-lead h3{color:#fff}
+@media(max-width:1050px){.governance-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1050px){.institution-page-content .governance-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.governance-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.governance-card{min-height:220px;padding:17px 14px}.governance-card-top{margin-bottom:17px}.governance-photo-trigger{width:88px;height:88px;flex-basis:88px}.governance-role{font-size:.62rem}.governance-card h3{font-size:.98rem}.governance-heading{align-items:flex-start;flex-direction:column}.governance-heading>.text-link{margin-top:4px}.governance-lightbox{padding:12px}.governance-lightbox img{max-height:72vh}}
+@media(max-width:650px){.institution-page-content .governance-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:390px){.governance-grid{grid-template-columns:1fr}.governance-card{min-height:165px}}
+@media(max-width:700px){.governance-reading-card,.governance-reading-card:nth-child(even){grid-template-columns:1fr;gap:22px;padding:21px}.governance-reading-card:nth-child(even) .governance-reading-portrait{order:0}.governance-reading-portrait .governance-photo-trigger{width:min(74vw,300px)}}
+@media(prefers-reduced-motion:reduce){.governance-photo{transition:none}}
+.page-view-isp .institution-page{position:relative;isolation:isolate;background:linear-gradient(135deg,#f2f0f8 0%,#f8f6fb 52%,#f5f2e8 100%)}
+.page-view-isp .institution-page:before{position:absolute;z-index:-1;top:0;right:0;left:0;height:5px;background:linear-gradient(90deg,#24164f 0%,#594584 68%,#e4ca18 68%,#e4ca18 100%);content:""}
+.page-view-isp .institution-page-grid{grid-template-columns:270px minmax(0,1fr);gap:clamp(28px,5vw,64px)}
+.page-view-isp .institution-page-nav{position:sticky;top:112px;gap:0;padding:0;overflow:hidden;border:1px solid #dfd9e9;border-radius:12px;background:#fff;box-shadow:0 14px 36px #24164f0c}
+.institution-page-nav-heading{padding:22px 21px 17px;background:linear-gradient(145deg,#24164f,#17103b);color:#fff}
+.institution-page-nav-heading .eyebrow{margin:0 0 5px;color:#f1dd4b;font-size:.64rem}
+.institution-page-nav-heading>span{font:500 1.16rem Georgia,"Times New Roman",serif}
+.page-view-isp .institution-page-nav nav{display:grid;padding:9px}
+.page-view-isp .institution-page-nav a{justify-content:space-between;gap:10px;padding:9px 11px;border:0;border-left:3px solid transparent;border-radius:6px;color:#565268;font-size:.79rem;line-height:1.35;transition:background .18s ease,color .18s ease,border-color .18s ease}
+.page-view-isp .institution-page-nav a:hover,.page-view-isp .institution-page-nav a[aria-current=page]{border-left-color:#e4ca18;background:#f2eff8;color:#24164f}
+.institution-nav-arrow{color:#a48b26;opacity:0;transform:translateX(-4px);transition:opacity .18s ease,transform .18s ease}
+.institution-page-nav a:hover .institution-nav-arrow,.institution-page-nav a[aria-current=page] .institution-nav-arrow{opacity:1;transform:translateX(0)}
+.page-view-isp .institution-page-content{max-width:none;min-width:0;padding:clamp(26px,5vw,54px);border:1px solid #e1dceb;border-radius:14px;background:#fff;box-shadow:0 18px 48px #24164f0c}
+.institution-page-heading{margin:-4px 0 24px;padding-bottom:23px;border-bottom:1px solid #ebe7f0}
+.page-view-isp .institution-page-heading .institution-breadcrumb{margin:0 0 24px;color:#777184;font-size:.76rem;letter-spacing:.01em}
+.page-view-isp .institution-page-heading .institution-breadcrumb a{color:#594584;text-decoration:none}
+.page-view-isp .institution-page-heading .institution-breadcrumb a:hover{text-decoration:underline;text-underline-offset:3px}
+.institution-page-heading .eyebrow{margin-bottom:9px;font-size:.67rem}
+.page-view-isp .institution-page-heading .page-title{margin:0;color:#24164f;font:500 clamp(2rem,4vw,3.15rem)/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.025em}
+.institution-heading-rule{display:block;width:58px;height:3px;margin-top:18px;background:#e4ca18}
+.institution-page-copy{min-height:170px}
+.page-view-isp .institution-prose{max-width:850px;color:#4e4b5c;font-size:1rem;line-height:1.9;overflow-wrap:anywhere}
+.page-view-isp .institution-prose p{margin:0 0 1.1em}
+.page-view-isp .institution-prose h2,.page-view-isp .institution-prose h3{margin:1.35em 0 .55em;color:#24164f;font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.3}
+.page-view-isp .institution-prose h2{font-size:1.55rem}.page-view-isp .institution-prose h3{font-size:1.2rem}
+.page-view-isp .institution-prose ul,.page-view-isp .institution-prose ol{margin:.7em 0 1.2em;padding-left:1.5em}
+.page-view-isp .institution-prose li{padding:.2em 0}
+.page-view-isp .institution-prose blockquote{margin:1.3em 0;padding:12px 18px;border-left:3px solid #e4ca18;background:#f8f6fb;color:#5b5271}
+.page-view-isp .institution-prose a{color:#493574;text-underline-offset:3px}
+.page-view-isp .institution-page-copy .content-note{max-width:720px;border-color:#e4ca18;border-radius:8px;background:#faf9fc}
+.page-view-isp .institution-page-content .governance-grid{margin-top:28px}
+@media(max-width:800px){.page-view-isp .institution-page-grid{grid-template-columns:1fr;gap:20px}.page-view-isp .institution-page-nav{position:static}.institution-page-nav-heading{padding:17px 19px 13px}.page-view-isp .institution-page-nav nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:3px}.page-view-isp .institution-page-content{padding:clamp(22px,5vw,36px)}}
+@media(max-width:520px){.page-view-isp .institution-page-nav nav{grid-template-columns:1fr}.page-view-isp .institution-page-content{padding:22px 18px;border-radius:10px}.institution-page-heading{margin-bottom:19px;padding-bottom:18px}.page-view-isp .institution-page-heading .institution-breadcrumb{margin-bottom:19px}.page-view-isp .institution-page-heading .page-title{font-size:2.05rem}.institution-page-copy{min-height:100px}.page-view-isp .institution-prose{font-size:.94rem;line-height:1.8}}
+@media(prefers-reduced-motion:reduce){.page-view-isp .institution-page-nav a,.institution-nav-arrow{transition:none}}
+
+/* Vie de campus — archive éditoriale avec une publication mise en avant. */
+.campus-intro{position:relative;overflow:hidden;background:linear-gradient(118deg,#17103b 0%,#2e225e 70%,#40336d 100%);color:#fff}
+.campus-intro:after{position:absolute;right:-115px;top:-170px;width:440px;height:440px;border:1px solid #ffffff20;border-radius:50%;box-shadow:0 0 0 38px #ffffff09,0 0 0 78px #ffffff06;content:"";pointer-events:none}
+.campus-intro-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) 220px;align-items:center;gap:clamp(32px,8vw,120px)}
+.campus-intro-copy{max-width:720px}.campus-intro-copy .eyebrow{color:#f1dd4b}.campus-intro-copy .page-title{margin:0;color:#fff;font:500 clamp(2.6rem,5.5vw,4.5rem)/1.08 Georgia,"Times New Roman",serif;letter-spacing:-.03em}.campus-intro-copy .page-title em{color:#f1dd4b;font-weight:400}.campus-intro-copy .page-lead{max-width:600px;margin:20px 0 23px;color:#e2deec;font-size:1rem;line-height:1.75}
+.campus-explore-link{display:inline-flex;min-height:44px;align-items:center;gap:14px;color:#f1dd4b;font-size:.83rem;font-weight:750;text-decoration:none;text-underline-offset:5px}.campus-explore-link:hover{text-decoration:underline}.campus-explore-link span{display:grid;width:27px;height:27px;place-items:center;border:1px solid #f1dd4b78;border-radius:50%;transition:transform .18s ease}.campus-explore-link:hover span{transform:translateY(3px)}
+.campus-intro-count{position:relative;min-height:176px;display:flex;flex-direction:column;justify-content:center;padding:23px 25px;overflow:hidden;border:1px solid #ffffff35;background:#ffffff0c;backdrop-filter:blur(3px)}.campus-intro-count>span{color:#f1dd4b;font-size:.68rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.campus-intro-count>strong{margin:4px 0;color:#fff;font:400 3.5rem/.98 Georgia,"Times New Roman",serif}.campus-intro-count>small{color:#e2deec;font-size:.76rem}.campus-count-seal{position:absolute;right:14px;bottom:13px;color:#ffffff19;font:700 .62rem/1.15 Arial,sans-serif;letter-spacing:.08em;text-align:right;font-style:normal}
+.campus-archive{background:linear-gradient(180deg,#f3f1f8 0%,#faf9fc 100%);scroll-margin-top:95px}.campus-archive-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:25px}.campus-archive-heading .eyebrow{margin-bottom:8px}.campus-archive-heading h2{margin:0;color:#24164f;font:500 clamp(1.8rem,3.5vw,2.6rem)/1.2 Georgia,"Times New Roman",serif}.campus-archive-heading h2 em{color:#765900;font-weight:400}.campus-archive-heading>span{flex:none;padding:8px 12px;border:1px solid #ded8eb;border-radius:999px;background:#fff;color:#5d5373;font-size:.72rem;font-weight:700}
+.campus-featured-story{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);min-height:390px;margin-bottom:26px;overflow:hidden;border:1px solid #e0dbea;background:#fff;box-shadow:0 17px 42px #24164f12}.campus-featured-image,.campus-featured-placeholder{position:relative;min-height:390px;overflow:hidden;background:#ded9eb}.campus-featured-image img{display:block;width:100%;height:100%;min-height:390px;object-fit:cover;transition:transform .55s ease}.campus-featured-story:hover .campus-featured-image img{transform:scale(1.025)}.campus-featured-placeholder{display:grid;place-items:center;background:radial-gradient(circle at 72% 25%,#615487 0,transparent 38%),linear-gradient(135deg,#24164f,#17103b)}.campus-featured-placeholder:before{position:absolute;inset:12%;border:1px solid #ffffff29;content:""}.campus-featured-placeholder span{position:relative;color:#f1dd4b;font-size:.72rem;font-weight:800;letter-spacing:.17em}.campus-featured-placeholder i{padding-inline:7px;color:#fff}
+.campus-featured-copy{display:flex;min-width:0;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(25px,4vw,48px)}.campus-story-kicker{display:flex;flex-wrap:wrap;align-items:center;gap:11px;margin:0 0 15px;color:#716b80;font-size:.72rem}.campus-story-kicker>span{padding:6px 9px;background:#f1dd4b;color:#24164f;font-size:.62rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.campus-story-kicker time,.campus-story-date time{font-variant-numeric:tabular-nums}.campus-featured-copy h3{margin:0 0 13px;color:#24164f;font:500 clamp(1.45rem,2.8vw,2.15rem)/1.25 Georgia,"Times New Roman",serif;overflow-wrap:anywhere}.campus-story-excerpt{margin:0 0 12px;color:#5a5668;font-size:.88rem;line-height:1.75;overflow-wrap:anywhere}
+.campus-story-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.campus-story-card{min-width:0;display:flex;flex-direction:column;overflow:hidden;border:1px solid #e0dbea;background:#fff;box-shadow:0 10px 28px #24164f0b;transition:transform .2s ease,box-shadow .2s ease}.campus-story-card:hover{transform:translateY(-3px);box-shadow:0 17px 36px #24164f16}.campus-story-image,.campus-story-placeholder{height:218px;flex:none;overflow:hidden;background:#e5e0ee}.campus-story-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}.campus-story-card:hover .campus-story-image img{transform:scale(1.035)}.campus-story-placeholder{position:relative;display:flex;align-items:center;justify-content:space-between;padding:22px;background:linear-gradient(145deg,#e6e1f0,#faf5e4)}.campus-story-placeholder:after{position:absolute;right:20px;top:20px;width:108px;height:108px;border:1px solid #24164f24;transform:rotate(45deg);content:""}.campus-story-placeholder span{color:#33245f;font:400 2.8rem Georgia,"Times New Roman",serif}.campus-story-placeholder small{z-index:1;color:#625874;font-size:.63rem;font-weight:800;letter-spacing:.14em}
+.campus-story-card-copy{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:19px 20px 21px}.campus-story-date{margin:0 0 9px;color:#765900;font-size:.7rem;letter-spacing:.06em}.campus-story-card h3{margin:0 0 10px;color:#24164f;font:500 1.2rem/1.35 Georgia,"Times New Roman",serif;overflow-wrap:anywhere}.campus-story-card .campus-story-excerpt{font-size:.84rem}.campus-read-more{width:100%;margin-top:auto;padding-top:12px;border-top:1px solid #eeeaf3}.campus-read-more summary{min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:#42336e;font-size:.78rem;font-weight:750;cursor:pointer;list-style:none}.campus-read-more summary::-webkit-details-marker{display:none}.campus-read-more summary span{display:grid;width:26px;height:26px;place-items:center;border:1px solid #ded8eb;border-radius:50%;font-size:.85rem;transition:transform .18s ease,background .18s ease}.campus-read-more[open] summary span{transform:rotate(45deg);background:#f2eff8}.campus-read-more summary:focus-visible{outline:3px solid #b28b20;outline-offset:3px}.campus-full-description{padding:6px 0 2px;color:#555164;font-size:.84rem;line-height:1.75;overflow-wrap:anywhere}.campus-full-description p{margin:0 0 .9em}.campus-full-description h2,.campus-full-description h3{margin:1.05em 0 .4em;color:#24164f;font-family:Georgia,"Times New Roman",serif;font-size:1.08rem}.campus-full-description ul,.campus-full-description ol{padding-left:1.4em}.campus-pagination{justify-content:center;margin-top:34px}.campus-empty{max-width:730px;margin:0 auto;padding:clamp(34px,6vw,62px);border:1px solid #e0dbea;border-top:4px solid #e4ca18;background:#fff;text-align:center;box-shadow:0 15px 40px #24164f0c}.campus-empty>span{width:59px;height:59px;display:grid;place-items:center;margin:0 auto 18px;border:1px solid #ded8eb;border-radius:50%;color:#382968;font:500 .8rem Georgia,"Times New Roman",serif;letter-spacing:.04em}.campus-empty h2{margin:0 0 9px;color:#24164f;font:500 1.65rem/1.3 Georgia,"Times New Roman",serif}.campus-empty p{margin:0;color:#625d70;font-size:.9rem;line-height:1.7}
+@media(max-width:900px){.campus-intro-grid{grid-template-columns:minmax(0,1fr) 185px;gap:28px}.campus-featured-story{grid-template-columns:1fr 1fr}.campus-featured-image,.campus-featured-placeholder,.campus-featured-image img{min-height:340px}.campus-story-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.campus-story-image,.campus-story-placeholder{height:205px}}
+@media(max-width:650px){.campus-intro{padding-block:57px}.campus-intro-grid{grid-template-columns:1fr;gap:26px}.campus-intro-copy .page-title{font-size:clamp(2.6rem,12vw,3.5rem)}.campus-intro-count{min-height:128px;padding:18px 21px}.campus-intro-count>strong{font-size:2.8rem}.campus-archive{padding-block:56px}.campus-archive-heading{align-items:flex-start;flex-direction:column;margin-bottom:19px}.campus-featured-story{grid-template-columns:1fr;margin-bottom:18px}.campus-featured-image,.campus-featured-placeholder,.campus-featured-image img{height:245px;min-height:245px}.campus-featured-copy{padding:23px 20px 24px}.campus-story-grid{grid-template-columns:1fr;gap:15px}.campus-story-image,.campus-story-placeholder{height:225px}.campus-story-card-copy{padding:18px}.campus-pagination{margin-top:25px}}
+@media(prefers-reduced-motion:reduce){.campus-explore-link span,.campus-featured-image img,.campus-story-card,.campus-story-image img,.campus-read-more summary span{transition:none}}
+.program-section .section-heading{margin-bottom:20px}
+.program-intro{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0 0 24px;padding:14px 17px;border:1px solid #e2deeb;border-radius:10px;background:#ffffffa8}
+.program-intro>p{margin:0;color:#5e6474;font-size:.84rem;line-height:1.6}
+.program-total{display:inline-flex;align-items:center;gap:7px;flex:0 0 auto;color:#625483;font-size:.74rem;font-weight:700;white-space:nowrap}
+.program-total strong{display:grid;width:29px;height:29px;place-items:center;border-radius:50%;background:#eeeaf5;color:#382968;font:700 .8rem Georgia,"Times New Roman",serif}
+.program-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.program-card{position:relative;min-height:218px;padding:21px 22px 18px;overflow:hidden;border:1px solid #ded9e9;border-top:3px solid #e4ca18;border-radius:12px;background:linear-gradient(145deg,#fff 0%,#fbfaff 100%);box-shadow:0 9px 26px #24164f0b;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.program-card:after{position:absolute;right:-43px;top:-58px;width:124px;height:124px;border:1px solid #eee9f6;border-radius:50%;content:"";pointer-events:none}
+.program-card:hover{transform:translateY(-3px);border-color:#cbc3dc;box-shadow:0 16px 34px #24164f14}
+.program-card-top{position:relative;z-index:1;display:flex;width:100%;align-items:center;justify-content:space-between}
+.program-card .program-number{display:inline-grid;min-width:34px;height:30px;place-items:center;border-radius:7px;background:#f1eef7;color:#51427d;font-size:.7rem;font-weight:800;letter-spacing:.09em}
+.program-card-mark{display:grid;width:31px;height:31px;place-items:center;border:1px solid #e8e4ef;border-radius:50%;color:#776794;font-size:.9rem;transition:background .18s ease,color .18s ease,transform .18s ease}
+.program-card:hover .program-card-mark{transform:translate(2px,-2px);background:#24164f;color:#fff}
+.program-card .program-card-label{margin:19px 0 5px;color:#807241;font-size:.63rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.program-card .program-title{margin:0;color:#24164f;font:500 1.24rem/1.35 Georgia,"Times New Roman",serif;overflow-wrap:anywhere}
+.program-card-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:18px}
+.program-card-bottom>span{color:#71798a;font-size:.7rem}
+.program-card-bottom>a{display:inline-flex;align-items:center;gap:8px;color:#3d2d6b;font-size:.74rem;font-weight:750;text-decoration:none;white-space:nowrap}
+.program-card-bottom>a span{color:#967914;transition:transform .18s ease}
+.program-card-bottom>a:hover{color:#776000;text-decoration:underline;text-underline-offset:4px}
+.program-card-bottom>a:hover span{transform:translateX(3px)}
+.academic-grid .academic-card{min-height:235px;border-radius:12px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.academic-grid .academic-card:hover{transform:translateY(-3px)}
+.academic-card-top{display:flex;width:100%;align-items:center;justify-content:space-between}
+.academic-card .academic-index{display:inline-grid;min-width:34px;height:30px;place-items:center;border-radius:7px;background:#f1eef7;color:#51427d;font-size:.7rem;font-weight:800;letter-spacing:.09em}
+.academic-card-mark{display:grid;width:31px;height:31px;place-items:center;border:1px solid #e8e4ef;border-radius:50%;color:#776794}
+.academic-card-label{margin:19px 0 5px;color:#807241;font-size:.63rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.academic-grid .academic-card h2{margin:0 0 14px;color:#24164f;font-size:1.27rem;overflow-wrap:anywhere}
+.academic-card-count{margin-top:auto;color:#71798a;font-size:.74rem}
+.academic-grid .academic-card .text-link{margin-top:auto;padding-top:18px}
+.department-overview{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:20px;margin:0 0 24px;padding:17px 20px;border:1px solid #e2deeb;border-left:3px solid #e4ca18;border-radius:10px;background:linear-gradient(110deg,#fff 0%,#f8f6fb 100%);box-shadow:0 8px 24px #24164f08}
+.department-overview>p{margin:0;color:#5e6474;font-size:.86rem;line-height:1.65}
+.department-overview>span{display:inline-flex;align-items:center;gap:8px;color:#625483;font-size:.74rem;font-weight:700;white-space:nowrap}
+.department-overview>span strong{display:grid;min-width:34px;height:34px;place-items:center;padding:0 7px;border-radius:50%;background:#eeeaf5;color:#382968;font:700 .85rem Georgia,"Times New Roman",serif}
+.department-overview>a{display:inline-flex;align-items:center;gap:8px;color:#3d2d6b;font-size:.75rem;font-weight:750;text-decoration:none;white-space:nowrap}
+.department-overview>a:hover{color:#776000;text-decoration:underline;text-underline-offset:4px}
+.department-overview>a:focus-visible,.academic-grid .academic-card .text-link:focus-visible{outline:3px solid #b59f40;outline-offset:4px;border-radius:3px}
+@media(max-width:900px){.program-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.program-intro{align-items:flex-start;flex-direction:column;gap:10px;margin-bottom:17px;padding:13px}.program-list{grid-template-columns:1fr;gap:12px}.program-card{min-height:190px;padding:19px}.program-card .program-card-label,.academic-card-label{margin-top:14px}.academic-grid .academic-card{min-height:200px}.department-overview{grid-template-columns:1fr auto;gap:10px 14px;margin-bottom:17px;padding:14px}.department-overview>p{grid-column:1/-1}.department-overview>a{justify-self:end}.academic-grid .academic-card .text-link{padding-top:15px}}

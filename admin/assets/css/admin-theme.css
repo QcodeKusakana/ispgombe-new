@@ -1,0 +1,260 @@
+/* ISP-GOMBE Administration — clean academic workspace */
+:root{--admin-ink:#18283f;--admin-muted:#6e7b8f;--admin-line:#e4e9f0;--admin-paper:#f4f6f9;--admin-navy:#172b49;--admin-indigo:#302467;--admin-gold:#c5a328;--admin-header-h:72px;--admin-sidebar-w:270px}
+body.admin-app{min-height:100vh;background:var(--admin-paper);color:var(--admin-ink);font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif;font-size:.91rem;line-height:1.55}
+.admin-app #header.admin-header{position:fixed;inset:0 0 auto;height:var(--admin-header-h);z-index:1005;display:flex;padding:0 28px;background:#fff!important;border-bottom:1px solid var(--admin-line);box-shadow:0 3px 14px #192c4510}
+.admin-app .admin-brand-wrap{width:calc(var(--admin-sidebar-w) - 12px);min-width:0;height:100%;gap:12px}
+.admin-app .admin-header .logo{display:flex;min-width:0;gap:11px;color:var(--admin-navy)}
+.admin-app .admin-header .logo img{width:43px;height:43px;flex:0 0 43px;object-fit:contain;border:0;border-radius:50%;background:#fff}
+.admin-app .admin-header .logo>span:last-child{font-size:.93rem;font-weight:800;letter-spacing:.045em;white-space:nowrap}
+.admin-app .admin-header .logo small{margin-top:1px;color:#78859a;font-size:.67rem;font-weight:500;letter-spacing:.015em}
+.admin-app .admin-header .toggle-sidebar-btn{display:grid;place-items:center;width:38px;height:38px;min-width:38px;min-height:38px;padding:0;border:1px solid #e6eaf0;border-radius:9px;background:#fff;color:#526179;font-size:1.22rem;transition:.18s ease}
+.admin-app .admin-header .toggle-sidebar-btn:hover{background:#f1f4f8;color:var(--admin-indigo)}
+.admin-app .admin-header-right{display:flex;align-items:center;justify-content:flex-end;gap:18px;flex:1;min-width:0}
+.admin-app .admin-user{display:flex;align-items:center;gap:9px;min-width:0;color:#33445d;font-size:.82rem;font-weight:650}
+.admin-app .admin-user>i{color:#7c6baf;font-size:1.15rem}
+.admin-app .admin-user-name{max-width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.admin-app .admin-user .badge{padding:6px 9px;border:1px solid #eee5bf;border-radius:999px;background:#fbf7e9!important;color:#735f18!important;font-size:.67rem;font-weight:750}
+.admin-app .admin-logout-form .btn{display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:8px 12px;border:1px solid #dce2eb;border-radius:8px;background:#fff;color:#43526a;font-size:.79rem;font-weight:650}
+.admin-app .admin-logout-form .btn:hover{border-color:#d9c36c;background:#fbf9f0;color:#5b4b16}
+.admin-app .admin-sidebar{position:fixed;top:var(--admin-header-h);bottom:0;left:0;z-index:1000;width:var(--admin-sidebar-w);padding:16px 14px 24px;overflow-y:auto;border:0;border-right:1px solid var(--admin-line);background:#fff!important;box-shadow:4px 0 18px #20345108;scrollbar-width:thin;scrollbar-color:#ccd3de transparent}
+.admin-app .admin-sidebar nav{height:100%}
+.admin-app .admin-sidebar .sidebar-nav{padding:0;margin:0;list-style:none}
+.admin-app .admin-sidebar .nav-heading{padding:18px 11px 7px;color:#8792a3;font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.admin-app .admin-sidebar .nav-item{margin:2px 0}
+.admin-app .admin-sidebar .nav-link{position:relative;display:flex;align-items:center;gap:11px;min-height:42px;margin:0;padding:9px 11px;border:0;border-radius:8px;background:transparent;color:#536177;font-size:.81rem;font-weight:570;line-height:1.3;transition:background .16s,color .16s}
+.admin-app .admin-sidebar .nav-link i{width:19px;flex:0 0 19px;color:#8490a3;font-size:1rem;text-align:center;transition:color .16s}
+.admin-app .admin-sidebar .nav-link:hover{background:#f4f5fa;color:var(--admin-indigo)}
+.admin-app .admin-sidebar .nav-link:hover i{color:#7968ae}
+.admin-app .admin-sidebar .nav-link.active,.admin-app .admin-sidebar .nav-link[aria-current=page]{background:#f0eef8;color:var(--admin-indigo);font-weight:720}
+.admin-app .admin-sidebar .nav-link.active:before,.admin-app .admin-sidebar .nav-link[aria-current=page]:before{position:absolute;top:9px;bottom:9px;left:0;width:3px;border-radius:4px;background:var(--admin-gold);content:""}
+.admin-app .admin-sidebar .nav-link.active i,.admin-app .admin-sidebar .nav-link[aria-current=page] i{color:var(--admin-indigo)}
+.admin-app #page-wrapper{min-height:calc(100vh - var(--admin-header-h));margin-top:var(--admin-header-h);margin-left:var(--admin-sidebar-w);padding:1px 0 24px;background:var(--admin-paper)}
+.admin-app #main.main{min-height:calc(100vh - var(--admin-header-h) - 68px);margin:0;padding:31px clamp(22px,3vw,48px) 42px;transition:none}
+.admin-app .pagetitle{margin:0 0 23px;padding:0 0 17px;border-bottom:1px solid #e3e7ee}
+.admin-app .pagetitle h1,.admin-app .admin-page-heading h1{margin:0;color:#243452;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.55rem,2vw,2rem);font-weight:500;letter-spacing:-.02em;line-height:1.25}
+.admin-app .pagetitle>p:not(.admin-eyebrow){margin:7px 0 0;color:#758197;font-size:.86rem;line-height:1.55}
+.admin-app .pagetitle .admin-eyebrow,.admin-app .admin-eyebrow{margin:0 0 6px;color:#81702b;font-size:.65rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.admin-app .section{margin-top:18px}
+.admin-app .card{overflow:visible;border:1px solid #e5e9ef;border-radius:11px;background:#fff;box-shadow:0 3px 13px #192c4508}
+.admin-app .card:hover{box-shadow:0 7px 22px #192c450d}
+.admin-app .card-body{padding:clamp(17px,2vw,25px)}
+.admin-app .card-title,.admin-app .admin-section-title{margin:0 0 9px;color:#293852;font-family:inherit;font-size:1rem;font-weight:720;letter-spacing:0}
+.admin-app .text-muted{color:#748096!important}
+.admin-app .table-responsive{overflow-x:auto;border:1px solid #e6eaf0;border-radius:9px;background:#fff}
+.admin-app .table{margin:0;color:#3c4960;font-size:.83rem}
+.admin-app .table thead th{padding:12px 14px;border-bottom:1px solid #e4e8ee;background:#f6f7fa;color:#56637a;font-size:.69rem;font-weight:750;letter-spacing:.035em;text-transform:uppercase;white-space:nowrap}
+.admin-app .table tbody td{padding:12px 14px;border-color:#edf0f4;line-height:1.45;vertical-align:middle}
+.admin-app .table tbody tr:hover{background:#fafbfc}
+.admin-app .table td:last-child{min-width:140px}
+.admin-app .form-label{margin-bottom:6px;color:#3d4b61;font-size:.79rem;font-weight:680}
+.admin-app .form-control,.admin-app .form-select{min-height:41px;border:1px solid #dce2ea;border-radius:8px;background-color:#fff;color:#27364e;font-size:.85rem;box-shadow:none;transition:border-color .15s,box-shadow .15s}
+.admin-app textarea.form-control{min-height:102px;line-height:1.55}
+.admin-app .form-control::placeholder{color:#9aa4b3}
+.admin-app .form-control:focus,.admin-app .form-select:focus{border-color:#8d80b2;box-shadow:0 0 0 3px #6252911c}
+.admin-app input[readonly],.admin-app textarea[readonly]{background:#f5f6f8;color:#667287}
+.admin-app .btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:39px;padding:8px 13px;border-radius:8px;font-size:.8rem;font-weight:670;line-height:1.25;white-space:normal;transition:background .15s,border-color .15s,color .15s,box-shadow .15s,transform .15s}
+.admin-app .btn:hover{transform:translateY(-1px);box-shadow:0 4px 11px #24345218}
+.admin-app .btn:active{transform:translateY(0)}
+.admin-app .btn.btn-sm{min-height:34px;padding:6px 10px;font-size:.75rem}
+.admin-app .btn-primary{border-color:#302467;background:#302467;color:#fff}
+.admin-app .btn-primary:hover,.admin-app .btn-primary:focus{border-color:#241a50;background:#241a50;color:#fff}
+.admin-app .btn-outline-primary{border-color:#d4d0e2;background:#fff;color:#392d6a}
+.admin-app .btn-outline-primary:hover{border-color:#302467;background:#302467;color:#fff}
+.admin-app .btn-outline-secondary{border-color:#dce2ea;color:#5c687b}
+.admin-app .btn-outline-danger{border-color:#efd5d8;color:#a8404a}
+.admin-app .btn-outline-danger:hover{border-color:#ae4550;background:#ae4550;color:#fff}
+.admin-app .btn-success,.admin-app .btn-outline-success:hover{border-color:#32775e;background:#32775e;color:#fff}
+.admin-app .alert{padding:12px 15px;border:1px solid #e3e7ed;border-radius:9px;font-size:.83rem}
+.admin-app .badge{font-size:.69rem;font-weight:700;letter-spacing:.01em}
+.admin-app .pagetitle .breadcrumb{margin:9px 0 0;font-size:.76rem}
+.admin-app details>summary.btn{list-style:none;cursor:pointer}
+.admin-app details>summary.btn::-webkit-details-marker{display:none}
+.admin-app details[open]>summary{margin-bottom:10px}
+.admin-app .admin-rich-editor{position:relative;display:flow-root;box-sizing:border-box;width:100%;max-width:100%;min-width:0;height:auto;margin:18px 0 26px;border:1px solid #dce2ea;border-radius:8px;background:#fff;overflow:visible;clear:both}
+.admin-app .admin-rich-editor.is-invalid{border-color:#dc3545;box-shadow:0 0 0 3px #dc354526}
+.admin-app .admin-rich-editor.is-readonly .ql-toolbar{opacity:.58;pointer-events:none}
+.admin-app .admin-rich-editor.is-readonly .ql-editor{background:#f7f8fa;color:#667287}
+.admin-app .admin-rich-editor .ql-toolbar.ql-snow{position:relative;z-index:8;display:block;box-sizing:border-box;width:100%;height:auto;min-height:44px;padding:7px 9px;border:0;border-bottom:1px solid #e6eaf0;border-radius:8px 8px 0 0;background:#f7f8fa;overflow:visible;white-space:normal}
+.admin-app .admin-rich-editor .ql-toolbar.ql-snow::after{display:table;clear:both;content:""}
+.admin-app .admin-rich-editor .ql-toolbar.ql-snow .ql-formats{float:left;margin:0 6px 4px 0}
+.admin-app .admin-rich-editor .ql-container.ql-snow{position:relative;z-index:1;display:block;box-sizing:border-box;width:100%;height:auto!important;min-height:168px;border:0;font-family:inherit;font-size:.86rem;overflow:visible}
+.admin-app .admin-rich-editor .ql-editor{box-sizing:border-box;width:100%;height:auto!important;min-height:166px;max-height:none;padding:13px 14px;color:#2e3b50;line-height:1.65;overflow:visible!important;overflow-wrap:anywhere}
+.admin-app .admin-rich-editor .ql-editor.ql-blank::before{color:#8a94a4;font-style:normal}
+.admin-app .admin-rich-editor .ql-toolbar button{box-sizing:border-box;min-width:30px;min-height:30px;margin:0 1px 2px}
+.admin-app .admin-rich-editor .ql-toolbar .ql-picker{max-width:100%}
+.admin-app .admin-rich-editor .ql-toolbar .ql-picker-options{z-index:10;max-height:220px;overflow-y:auto;box-shadow:0 8px 22px #1c2c451f}
+.admin-app .admin-rich-editor .ql-tooltip{position:absolute;z-index:12;max-width:calc(100% - 16px);white-space:normal;overflow-wrap:anywhere;box-shadow:0 8px 24px #1c2c4524}
+.admin-app .admin-rich-editor .ql-tooltip input[type="text"]{box-sizing:border-box;max-width:min(170px,42vw)}
+.admin-app .admin-rich-editor .ql-tooltip a.ql-action,.admin-app .admin-rich-editor .ql-tooltip a.ql-remove{color:#302467}
+.admin-app .admin-rich-editor .ql-editor a{color:#38286a;text-decoration:underline}
+.admin-app .admin-rich-editor .ql-editor blockquote{border-left-color:#c5a328;color:#625329}
+.admin-app .admin-rich-editor .ql-editor h2,.admin-app .admin-rich-editor .ql-editor h3{color:#243452}
+.admin-app .admin-rich-editor[aria-busy="true"]{min-height:168px}
+.admin-app .admin-content-edit-form .admin-content-actions{position:relative;z-index:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 16px!important;padding:11px 13px;border:1px solid #e3e7ed;border-radius:10px;background:#fff;box-shadow:0 2px 8px #192c4508}
+.admin-app .admin-content-edit-form .admin-content-actions p{font-size:.78rem}
+.admin-app .admin-content-edit-form>.btn-primary{margin-top:2px}
+.admin-app .admin-content-edit-form .card-body{padding:21px}
+.admin-app .admin-content-edit-form .card-title{font-size:.94rem}
+.admin-app .admin-rich-preview{padding:13px 15px;border:1px solid #e8ebf0;border-radius:8px;background:#fafbfc;color:#536078;font-size:.84rem;line-height:1.65}
+.admin-app .admin-rich-preview p:last-child{margin-bottom:0}
+.admin-app .admin-skip-link{z-index:1105;border-radius:7px}
+.admin-app :focus-visible{outline:3px solid #8674b4;outline-offset:2px}
+.admin-app .admin-dashboard .pagetitle{align-items:center}
+.admin-app .admin-dashboard .pagetitle h1{font-size:clamp(1.65rem,2.2vw,2.2rem)}
+.admin-app .admin-stat-card{height:100%;border:1px solid #e5e9ef;border-radius:11px;box-shadow:0 3px 13px #192c4508}
+.admin-app .admin-stat-card .card-body{position:relative;padding:20px}
+.admin-app .admin-stat-card p{margin:0 0 5px;color:#758197;font-size:.75rem;font-weight:600}
+.admin-app .admin-stat-card strong{color:#263653;font-family:Georgia,"Times New Roman",serif;font-size:1.8rem;font-weight:600}
+.admin-app .admin-stat-icon{width:38px;height:38px;border-radius:10px;background:#f0eef8;color:#594a88}
+.admin-app .admin-quick-links a{min-height:45px;border-color:#edf0f4;color:#44536b}
+.admin-app .admin-quick-links a i{color:#74649f}
+.admin-app .admin-quick-links a:hover{padding-left:8px;color:#302467}
+.admin-app .admin-footer{display:flex;justify-content:space-between;gap:12px;margin-left:var(--admin-sidebar-w);padding:17px 32px 20px;border-top:1px solid #e4e8ee;background:#fff;color:#7b8798;font-size:.71rem}
+.admin-app.admin-page-login{min-height:100vh;background:radial-gradient(ellipse at 12% 12%,#e9e7f5,#f4f6f9 50%,#f1f2f5)}
+.admin-app.admin-page-login .admin-login-brand{color:#27385a}
+.admin-app.admin-page-login .register .card{border-radius:14px}
+.admin-app.admin-page-login #main{margin:0;padding:20px}
+@media(max-width:1199px){.admin-app #header.admin-header{padding:0 18px}.admin-app .admin-brand-wrap{width:auto;flex:1}.admin-app .admin-sidebar{left:calc(-1 * var(--admin-sidebar-w) - 12px);z-index:1000}.admin-app.toggle-sidebar .admin-sidebar{left:0}.admin-app #page-wrapper{margin-left:0}.admin-app .admin-footer{margin-left:0}}
+@media(max-width:1199px){body.admin-app.toggle-sidebar:before{position:fixed;inset:var(--admin-header-h) 0 0;z-index:998;background:#172b4938;content:"";backdrop-filter:blur(2px)}}
+@media(max-width:767px){:root{--admin-header-h:64px;--admin-sidebar-w:min(290px,86vw)}.admin-app #header.admin-header{height:var(--admin-header-h);padding:0 12px}.admin-app .admin-brand-wrap{gap:8px}.admin-app .admin-header .logo{gap:8px}.admin-app .admin-header .logo img{width:37px;height:37px;flex-basis:37px}.admin-app .admin-header .logo>span:last-child{font-size:.78rem}.admin-app .admin-header .logo small{font-size:.6rem}.admin-app .admin-header .toggle-sidebar-btn{width:36px;height:36px;min-width:36px;min-height:36px}.admin-app .admin-header-right{gap:8px}.admin-app .admin-user{gap:5px}.admin-app .admin-user>i{display:none}.admin-app .admin-user-name{display:none}.admin-app .admin-user .badge{max-width:105px;overflow:hidden;text-overflow:ellipsis;padding:5px 7px;font-size:.59rem;white-space:nowrap}.admin-app .admin-logout-form .btn{width:38px;height:38px;min-height:38px;padding:0;font-size:0}.admin-app .admin-logout-form .btn i{font-size:1rem}.admin-app #main.main{padding:23px 14px 30px}.admin-app .pagetitle{margin-bottom:18px;padding-bottom:14px}.admin-app .card-body{padding:16px}.admin-app .admin-content-edit-form .card-body{padding:16px}.admin-app .admin-content-edit-form .admin-content-actions{align-items:flex-start!important;padding:10px}.admin-app .admin-content-edit-form .admin-content-actions>p{max-width:100%;font-size:.73rem}.admin-app .admin-content-actions .btn{min-height:38px}.admin-app .admin-rich-editor .ql-toolbar.ql-snow{padding:6px}.admin-app .admin-rich-editor .ql-toolbar.ql-snow .ql-formats{margin-right:1px}.admin-app .modal-dialog-scrollable .modal-body{overscroll-behavior:contain}.admin-app .table thead th,.admin-app .table tbody td{padding:10px}.admin-app .admin-footer{display:block;padding:15px 18px}.admin-app .admin-footer span{display:block;margin:3px 0}.admin-app .admin-dashboard .pagetitle{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.admin-app *, .admin-app *::before, .admin-app *::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+.admin-app.admin-page-login{min-height:100vh;background:radial-gradient(ellipse at 8% 4%,#ebe9f5 0,transparent 34%),linear-gradient(145deg,#f5f6fa 0%,#eceff5 100%)}
+.admin-app.admin-page-login #page-wrapper{min-height:100vh;margin:0;padding:0;background:transparent}
+.admin-app.admin-page-login .admin-login-main{display:grid;min-height:100vh;place-items:center;padding:clamp(20px,5vw,64px)}
+.admin-app.admin-page-login .admin-login-shell{display:grid;grid-template-columns:minmax(0,.92fr) minmax(440px,1.08fr);width:min(1120px,100%);min-height:min(700px,calc(100vh - 80px));overflow:hidden;border:1px solid #e4e6ee;border-radius:24px;background:#fff;box-shadow:0 32px 90px #1b25401c}
+.admin-app.admin-page-login .admin-login-identity{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-width:0;padding:clamp(30px,5vw,58px);overflow:hidden;background:linear-gradient(145deg,#24164f 0%,#1a204b 62%,#142f53 100%);color:#fff}
+.admin-app.admin-page-login .admin-login-identity:before,.admin-app.admin-page-login .admin-login-identity:after{position:absolute;z-index:0;content:"";pointer-events:none;border:1px solid #ffffff12;border-radius:50%}
+.admin-app.admin-page-login .admin-login-identity:before{width:520px;height:520px;right:-245px;top:12%;box-shadow:0 0 0 36px #ffffff08,0 0 0 76px #ffffff06}
+.admin-app.admin-page-login .admin-login-identity:after{width:270px;height:270px;left:-165px;bottom:-145px;background:#d7bb3612}
+.admin-app.admin-page-login .admin-login-brand,.admin-app.admin-page-login .admin-login-message,.admin-app.admin-page-login .admin-login-security,.admin-app.admin-page-login .admin-login-location{position:relative;z-index:1}
+.admin-app.admin-page-login .admin-login-brand{display:flex;align-items:center;gap:15px;color:#fff;text-decoration:none;font-size:1rem;font-weight:800;letter-spacing:.055em}
+.admin-app.admin-page-login .admin-login-brand .admin-brand-logo{width:58px;height:58px;flex:0 0 58px;border:2px solid #ffffffa8;box-shadow:0 5px 18px #0c102b55}
+.admin-app.admin-page-login .admin-login-brand small{display:block;max-width:260px;margin-top:4px;color:#e2deef;font-size:.67rem;font-weight:500;letter-spacing:.015em;line-height:1.5}
+.admin-app.admin-page-login .admin-login-message{max-width:410px;margin:50px 0}
+.admin-app.admin-page-login .admin-login-kicker{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid #ffffff38;border-radius:999px;background:#ffffff0c;color:#f0db73;font-size:.72rem;font-weight:750;letter-spacing:.09em;text-transform:uppercase}
+.admin-app.admin-page-login .admin-login-message h1{margin:25px 0 16px;color:#fff;font:500 clamp(2.15rem,4vw,3.35rem)/1.1 Georgia,"Times New Roman",serif;letter-spacing:-.035em}
+.admin-app.admin-page-login .admin-login-message p{max-width:370px;margin:0;color:#e0dfeb;font-size:.96rem;line-height:1.8}
+.admin-app.admin-page-login .admin-login-security{display:flex;align-items:center;gap:13px;padding-top:20px;border-top:1px solid #ffffff25}
+.admin-app.admin-page-login .admin-login-security-icon{display:grid;width:42px;height:42px;place-items:center;border:1px solid #ffffff30;border-radius:12px;background:#ffffff0d;color:#f0db73;font-size:1.15rem}
+.admin-app.admin-page-login .admin-login-security strong,.admin-app.admin-page-login .admin-login-security small{display:block}
+.admin-app.admin-page-login .admin-login-security strong{font-size:.83rem}
+.admin-app.admin-page-login .admin-login-security small{margin-top:3px;color:#d0cde0;font-size:.72rem}
+.admin-app.admin-page-login .admin-login-location{margin:18px 0 0;color:#d0cde0;font-size:.72rem}
+.admin-app.admin-page-login .admin-login-location i{margin-right:5px;color:#f0db73}
+.admin-app.admin-page-login .admin-login-form-panel{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:clamp(28px,6vw,76px)}
+.admin-app.admin-page-login .admin-login-form-wrap{width:min(100%,390px);margin-inline:auto}
+.admin-app.admin-page-login .admin-login-eyebrow{margin:0 0 10px;color:#806d20;font-size:.69rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.admin-app.admin-page-login .admin-login-form-wrap h2{margin:0;color:#1d2940;font:500 clamp(2rem,3vw,2.55rem)/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.025em}
+.admin-app.admin-page-login .admin-login-intro{margin:11px 0 30px;color:#687387;font-size:.9rem;line-height:1.65}
+.admin-app.admin-page-login .admin-login-error{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;border:1px solid #f2c7c9;border-radius:10px;font-size:.83rem}
+.admin-app.admin-page-login .admin-login-error i{margin-top:2px}
+.admin-app.admin-page-login .admin-login-form{display:grid;gap:21px}
+.admin-app.admin-page-login .admin-login-field label{display:block;margin-bottom:8px;color:#303b50;font-size:.79rem;font-weight:700}
+.admin-app.admin-page-login .admin-login-input-wrap{position:relative}
+.admin-app.admin-page-login .admin-login-input-wrap>i{position:absolute;top:50%;left:15px;z-index:1;color:#7c8494;font-size:1rem;transform:translateY(-50%)}
+.admin-app.admin-page-login .admin-login-input-wrap input{width:100%;min-height:52px;padding:12px 14px 12px 44px;border:1px solid #dce1e9;border-radius:10px;background:#fbfcfe;color:#202c42;font-size:.9rem;transition:border-color .18s ease,box-shadow .18s ease,background .18s ease}
+.admin-app.admin-page-login .admin-login-input-wrap input::placeholder{color:#929bad}
+.admin-app.admin-page-login .admin-login-input-wrap input:focus{outline:0;border-color:#70619a;background:#fff;box-shadow:0 0 0 4px #55448f18}
+.admin-app.admin-page-login .admin-login-submit{display:flex;align-items:center;justify-content:space-between;min-height:52px;margin-top:4px;padding:0 18px;border:1px solid #24164f;border-radius:10px;background:linear-gradient(105deg,#24164f,#302467);color:#fff;font-size:.88rem;font-weight:750;box-shadow:0 8px 18px #24164f20;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;cursor:pointer}
+.admin-app.admin-page-login .admin-login-submit i{font-size:1.1rem;transition:transform .18s ease}
+.admin-app.admin-page-login .admin-login-submit:hover{transform:translateY(-1px);background:linear-gradient(105deg,#19103d,#28205c);box-shadow:0 12px 22px #24164f2b}
+.admin-app.admin-page-login .admin-login-submit:hover i{transform:translateX(3px)}
+.admin-app.admin-page-login .admin-login-submit:focus-visible{outline:3px solid #b89b38;outline-offset:3px}
+.admin-app.admin-page-login .admin-login-help{display:flex;align-items:flex-start;gap:9px;margin:22px 0 0;color:#747e90;font-size:.74rem;line-height:1.65}
+.admin-app.admin-page-login .admin-login-help i{margin-top:2px;color:#806d20}
+.admin-app.admin-page-login .admin-login-back{display:inline-flex;align-items:center;gap:8px;margin-top:30px;color:#514576;font-size:.78rem;font-weight:700;text-decoration:none}
+.admin-app.admin-page-login .admin-login-back:hover{color:#806d20;text-decoration:underline;text-underline-offset:4px}
+.admin-app.admin-page-login .admin-login-form-footer{margin:30px 0 0;color:#8a92a0;font-size:.68rem;text-align:center}
+.admin-app.admin-page-login .admin-login-form-footer span{padding:0 5px;color:#b49c43}
+@media(max-width:850px){.admin-app.admin-page-login .admin-login-shell{grid-template-columns:1fr;max-width:620px;min-height:0}.admin-app.admin-page-login .admin-login-identity{min-height:310px;padding:28px 34px}.admin-app.admin-page-login .admin-login-message{margin:30px 0 20px}.admin-app.admin-page-login .admin-login-message h1{max-width:480px;margin:18px 0 9px;font-size:2.25rem}.admin-app.admin-page-login .admin-login-message p{font-size:.86rem}.admin-app.admin-page-login .admin-login-security,.admin-app.admin-page-login .admin-login-location{display:none}.admin-app.admin-page-login .admin-login-form-panel{padding:42px 34px}}
+@media(max-width:520px){.admin-app.admin-page-login .admin-login-main{padding:12px}.admin-app.admin-page-login .admin-login-shell{border-radius:17px}.admin-app.admin-page-login .admin-login-identity{min-height:220px;padding:22px}.admin-app.admin-page-login .admin-login-brand{gap:11px;font-size:.87rem}.admin-app.admin-page-login .admin-login-brand .admin-brand-logo{width:48px;height:48px;flex-basis:48px}.admin-app.admin-page-login .admin-login-brand small{font-size:.61rem}.admin-app.admin-page-login .admin-login-message{margin:23px 0 0}.admin-app.admin-page-login .admin-login-kicker{padding:6px 9px;font-size:.61rem}.admin-app.admin-page-login .admin-login-message h1{margin:13px 0 7px;font-size:1.75rem}.admin-app.admin-page-login .admin-login-message p{font-size:.79rem;line-height:1.55}.admin-app.admin-page-login .admin-login-form-panel{padding:30px 22px}.admin-app.admin-page-login .admin-login-intro{margin-bottom:23px;font-size:.83rem}.admin-app.admin-page-login .admin-login-form{gap:17px}.admin-app.admin-page-login .admin-login-form-footer{margin-top:24px}}
+.admin-app.admin-page-messagerie .admin-message-page-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.admin-app.admin-page-messagerie .admin-message-page-heading>div:first-child{max-width:700px}
+.admin-app.admin-page-messagerie .admin-message-total{display:flex;align-items:center;gap:12px;min-width:170px;padding:14px 17px;border:1px solid #e5e3ed;border-radius:13px;background:#fff;box-shadow:0 5px 18px #24164f0b}
+.admin-app.admin-page-messagerie .admin-message-total>i{display:grid;width:42px;height:42px;place-items:center;border-radius:12px;background:#f1eef8;color:#51427d;font-size:1.2rem}
+.admin-app.admin-page-messagerie .admin-message-total strong,.admin-app.admin-page-messagerie .admin-message-total small{display:block}
+.admin-app.admin-page-messagerie .admin-message-total strong{color:#202d45;font:600 1.35rem Georgia,"Times New Roman",serif}
+.admin-app.admin-page-messagerie .admin-message-total small{margin-top:2px;color:#737e90;font-size:.68rem}
+.admin-app.admin-page-messagerie .admin-message-inbox>.card{overflow:hidden;border:1px solid #e3e6ed;border-radius:14px;box-shadow:0 10px 30px #1b25400b}
+.admin-app.admin-page-messagerie .admin-message-inbox>.card>.card-body{padding:clamp(18px,3vw,30px)}
+.admin-app.admin-page-messagerie .admin-message-search{display:flex;align-items:center;gap:10px;max-width:850px;padding-bottom:24px;border-bottom:1px solid #edf0f4}
+.admin-app.admin-page-messagerie .admin-message-search>label{display:grid;width:40px;height:42px;flex:0 0 40px;place-items:center;margin:0;color:#69768b}
+.admin-app.admin-page-messagerie .admin-message-search .form-control{min-width:100px;min-height:44px;border-color:#dfe4ec;border-radius:9px;background:#fbfcfe}
+.admin-app.admin-page-messagerie .admin-message-search .btn{min-height:42px;white-space:nowrap}
+.admin-app.admin-page-messagerie .admin-message-list-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:22px 0 14px}
+.admin-app.admin-page-messagerie .admin-message-list-heading h2{display:flex;align-items:center;gap:9px;margin:0;color:#24314a;font-size:1rem;font-weight:750}
+.admin-app.admin-page-messagerie .admin-message-list-heading h2 i{color:#716397}
+.admin-app.admin-page-messagerie .admin-message-list-heading>span{color:#798396;font-size:.72rem}
+.admin-app.admin-page-messagerie .admin-message-list{display:grid;gap:14px}
+.admin-app.admin-page-messagerie .admin-message-card{min-width:0;padding:20px 22px;border:1px solid #e6e9ef;border-radius:12px;background:linear-gradient(135deg,#fff 0%,#fcfcfe 100%);box-shadow:0 4px 14px #18283f08;transition:border-color .18s ease,box-shadow .18s ease}
+.admin-app.admin-page-messagerie .admin-message-card:hover{border-color:#d6d0e5;box-shadow:0 9px 24px #24164f0e}
+.admin-app.admin-page-messagerie .admin-message-person{display:flex;align-items:center;gap:12px;min-width:0}
+.admin-app.admin-page-messagerie .admin-message-avatar{display:grid;width:44px;height:44px;flex:0 0 44px;place-items:center;border:1px solid #e2dced;border-radius:50%;background:linear-gradient(145deg,#f2eff8,#e9edf5);color:#51427d;font-size:.78rem;font-weight:800;letter-spacing:.04em}
+.admin-app.admin-page-messagerie .admin-message-sender{display:grid;min-width:0;gap:3px}
+.admin-app.admin-page-messagerie .admin-message-sender strong{overflow:hidden;color:#202d45;font-size:.87rem;text-overflow:ellipsis;white-space:nowrap}
+.admin-app.admin-page-messagerie .admin-message-sender a{overflow:hidden;color:#68758b;font-size:.75rem;text-decoration:none;text-overflow:ellipsis;white-space:nowrap}
+.admin-app.admin-page-messagerie .admin-message-sender a:hover{color:#4d3b7a;text-decoration:underline;text-underline-offset:3px}
+.admin-app.admin-page-messagerie .admin-message-reply{display:inline-flex;align-items:center;gap:7px;margin-left:auto;padding:8px 11px;border:1px solid #e1ddec;border-radius:8px;background:#f8f7fb;color:#4e4078;font-size:.74rem;font-weight:700;text-decoration:none;white-space:nowrap}
+.admin-app.admin-page-messagerie .admin-message-reply:hover{border-color:#cfc6df;background:#f0edf7}
+.admin-app.admin-page-messagerie .admin-message-content{margin:18px 0 0 56px;padding-left:17px;border-left:2px solid #e6e1ef}
+.admin-app.admin-page-messagerie .admin-message-subject-label{margin:0 0 5px;color:#7d8797;font-size:.63rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.admin-app.admin-page-messagerie .admin-message-content h3{margin:0 0 10px;color:#27344d;font-size:.95rem;font-weight:750;line-height:1.45;overflow-wrap:anywhere}
+.admin-app.admin-page-messagerie .admin-message-details{border-top:1px solid #eff1f5}
+.admin-app.admin-page-messagerie .admin-message-details summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px 0 2px;cursor:pointer;list-style:none}
+.admin-app.admin-page-messagerie .admin-message-details summary::-webkit-details-marker{display:none}
+.admin-app.admin-page-messagerie .admin-message-preview{min-width:0;overflow:hidden;color:#6d7789;font-size:.78rem;line-height:1.6;text-overflow:ellipsis;white-space:nowrap}
+.admin-app.admin-page-messagerie .admin-message-read{display:inline-flex;align-items:center;gap:7px;flex:0 0 auto;color:#51427d;font-size:.72rem;font-weight:750}
+.admin-app.admin-page-messagerie .admin-message-read-open,.admin-app.admin-page-messagerie .admin-message-details[open] .admin-message-read-closed{display:none}
+.admin-app.admin-page-messagerie .admin-message-details[open] .admin-message-read-open{display:inline}
+.admin-app.admin-page-messagerie .admin-message-details[open] .admin-message-read i{transform:rotate(180deg)}
+.admin-app.admin-page-messagerie .admin-message-read i{transition:transform .18s ease}
+.admin-app.admin-page-messagerie .admin-message-details summary:focus-visible{outline:3px solid #b9aed1;outline-offset:3px;border-radius:4px}
+.admin-app.admin-page-messagerie .admin-message-full{margin:11px 0 4px;padding:16px 18px;border:1px solid #eceef3;border-radius:9px;background:#f7f8fb;color:#364258;font-size:.86rem;line-height:1.85;overflow-wrap:anywhere;white-space:normal}
+.admin-app.admin-page-messagerie .admin-message-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:17px 0 0;padding-top:13px;border-top:1px solid #eff1f5}
+.admin-app.admin-page-messagerie .admin-message-actions form{margin:0}
+.admin-app.admin-page-messagerie .admin-message-actions .btn{min-height:34px}
+.admin-app.admin-page-messagerie .admin-message-channel{color:#8a93a2;font-size:.68rem}
+.admin-app.admin-page-messagerie .admin-message-empty{display:grid;justify-items:center;padding:clamp(32px,6vw,64px) 16px;text-align:center}
+.admin-app.admin-page-messagerie .admin-message-empty>span{display:grid;width:60px;height:60px;place-items:center;border-radius:18px;background:#f1eef8;color:#594b83;font-size:1.55rem}
+.admin-app.admin-page-messagerie .admin-message-empty h3{margin:18px 0 5px;color:#26344d;font:500 1.3rem Georgia,"Times New Roman",serif}
+.admin-app.admin-page-messagerie .admin-message-empty p{max-width:410px;margin:0 0 16px;color:#737e90;font-size:.83rem;line-height:1.65}
+.admin-app.admin-page-messagerie .admin-message-inbox .pagination{justify-content:center;margin:22px 0 0}
+@media(max-width:767px){.admin-app.admin-page-messagerie .admin-message-page-heading{align-items:flex-start;flex-direction:column}.admin-app.admin-page-messagerie .admin-message-total{min-width:0}.admin-app.admin-page-messagerie .admin-message-search{flex-wrap:wrap}.admin-app.admin-page-messagerie .admin-message-search>label{display:none}.admin-app.admin-page-messagerie .admin-message-search .form-control{flex:1 1 100%}.admin-app.admin-page-messagerie .admin-message-card{padding:16px}.admin-app.admin-page-messagerie .admin-message-content{margin-left:0;padding-left:12px}.admin-app.admin-page-messagerie .admin-message-preview{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.admin-app.admin-page-messagerie .admin-message-details summary{align-items:flex-start}.admin-app.admin-page-messagerie .admin-message-read{padding-top:2px}}
+@media(max-width:420px){.admin-app.admin-page-messagerie .admin-message-reply span{display:none}.admin-app.admin-page-messagerie .admin-message-reply{width:36px;height:36px;justify-content:center;padding:0}.admin-app.admin-page-messagerie .admin-message-reply i{font-size:1rem}.admin-app.admin-page-messagerie .admin-message-list-heading{align-items:flex-start;flex-direction:column}.admin-app.admin-page-messagerie .admin-message-actions{align-items:flex-start;flex-direction:column}}
+.admin-app.admin-page-messagerie .admin-message-total>span{display:block}
+.admin-app.admin-page-messagerie .admin-message-unread-total{display:flex;align-items:center;gap:5px;margin-top:7px;color:#8a5b00;font-size:.68rem;font-weight:750}
+.admin-app.admin-page-messagerie .admin-message-filters{display:flex;align-items:center;gap:7px;margin:18px 0 0;padding-bottom:2px;overflow-x:auto}
+.admin-app.admin-page-messagerie .admin-message-filters a{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:7px 12px;border:1px solid transparent;border-radius:999px;color:#68758a;font-size:.75rem;font-weight:700;text-decoration:none;white-space:nowrap}
+.admin-app.admin-page-messagerie .admin-message-filters a span{display:inline-grid;min-width:21px;height:21px;place-items:center;padding:0 5px;border-radius:999px;background:#edf0f5;color:#5e6a7e;font-size:.65rem}
+.admin-app.admin-page-messagerie .admin-message-filters a:hover{background:#f4f2f8;color:#382a66}
+.admin-app.admin-page-messagerie .admin-message-filters a.active{border-color:#e5dfef;background:#f3f0f8;color:#33245f}
+.admin-app.admin-page-messagerie .admin-message-filters a.active span{background:#e5dff0;color:#392a69}
+.admin-app.admin-page-messagerie .admin-message-card.is-unread{border-color:#d9d2e7;border-left:4px solid #69558f;background:linear-gradient(105deg,#f8f6fb 0,#fff 44%);box-shadow:0 6px 20px #24164f0c}
+.admin-app.admin-page-messagerie .admin-message-card.is-unread .admin-message-sender strong,.admin-app.admin-page-messagerie .admin-message-card.is-unread .admin-message-content h3{color:#1d2940;font-weight:850}
+.admin-app.admin-page-messagerie .admin-message-card.is-read .admin-message-avatar{filter:saturate(.65);opacity:.88}
+.admin-app.admin-page-messagerie .admin-message-state{display:inline-flex;align-items:center;gap:6px;margin-left:4px;padding:6px 9px;border-radius:999px;font-size:.65rem;font-weight:800;white-space:nowrap}
+.admin-app.admin-page-messagerie .admin-message-state.state-unread{background:#f5edcf;color:#765700}
+.admin-app.admin-page-messagerie .admin-message-state.state-read{background:#edf0f4;color:#687488}
+.admin-app.admin-page-messagerie .admin-message-actions-right{display:flex;align-items:center;justify-content:flex-end;gap:8px}
+.admin-app.admin-page-messagerie .admin-message-actions-right form{margin:0}
+.admin-app.admin-page-messagerie .admin-message-actions-right .btn{white-space:nowrap}
+.admin-app.admin-page-messagerie .admin-message-full{overflow-wrap:anywhere}
+.admin-app.admin-page-messagerie .admin-message-full h1,.admin-app.admin-page-messagerie .admin-message-full h2,.admin-app.admin-page-messagerie .admin-message-full h3{margin:1em 0 .45em;color:#25344e;line-height:1.35}
+.admin-app.admin-page-messagerie .admin-message-full p{margin:0 0 .8em}
+.admin-app.admin-page-messagerie .admin-message-full ul,.admin-app.admin-page-messagerie .admin-message-full ol{padding-left:1.5em}
+.admin-app.admin-page-messagerie .admin-message-full a{color:#4d3a7c;text-decoration:underline;text-underline-offset:2px}
+.admin-app.admin-page-messagerie .admin-message-full table{width:100%;margin:12px 0;border-collapse:collapse;font-size:.82rem}
+.admin-app.admin-page-messagerie .admin-message-full td,.admin-app.admin-page-messagerie .admin-message-full th{padding:8px 10px;border:1px solid #dfe3eb;text-align:left;vertical-align:top}
+.admin-app.admin-page-messagerie .admin-message-full th{background:#eeedf4;color:#2c3850;font-weight:750}
+.admin-app.admin-page-messagerie .admin-message-full pre{max-width:100%;margin:12px 0;padding:14px;overflow:auto;border:1px solid #dce1ea;border-radius:8px;background:#1b2030;color:#f3f4f7;font-size:.76rem;line-height:1.6;white-space:pre-wrap}
+.admin-app.admin-page-messagerie .admin-message-full code{font-family:Consolas,"Courier New",monospace}
+@media(max-width:767px){.admin-app.admin-page-messagerie .admin-message-state{margin-left:auto}.admin-app.admin-page-messagerie .admin-message-actions-right{width:100%;justify-content:flex-start;flex-wrap:wrap}.admin-app.admin-page-messagerie .admin-message-actions{gap:10px}.admin-app.admin-page-messagerie .admin-message-filters{margin-top:14px}}
+@media(max-width:460px){.admin-app.admin-page-messagerie .admin-message-person{flex-wrap:wrap}.admin-app.admin-page-messagerie .admin-message-state{margin-left:0}.admin-app.admin-page-messagerie .admin-message-reply{margin-left:auto}.admin-app.admin-page-messagerie .admin-message-actions-right .btn{font-size:.69rem}}
+.admin-app .home-slide-preview-trigger{position:relative;display:block;width:100%;padding:0;overflow:hidden;border:0;border-radius:10px;background:#171b27;text-align:left;cursor:zoom-in}
+.admin-app .home-slide-preview-trigger img{display:block;width:100%;height:190px;object-fit:cover;transition:transform .25s ease,opacity .25s ease}
+.admin-app .home-slide-preview-hint{position:absolute;right:10px;bottom:10px;display:inline-flex;align-items:center;gap:6px;padding:7px 10px;border:1px solid #ffffff45;border-radius:999px;background:#151923dc;color:#fff;font-size:.78rem;font-weight:700;opacity:.96}
+.admin-app .home-slide-preview-trigger:hover img,.admin-app .home-slide-preview-trigger:focus-visible img{transform:scale(1.035);opacity:.85}
+.admin-app .home-slide-preview-trigger:focus-visible{outline:3px solid #8066d4;outline-offset:3px}
+.admin-app .home-slide-preview-modal .modal-body{background:#f4f5f8}
+.admin-app .home-slide-preview-full{display:block;width:100%;max-height:min(72vh,850px);object-fit:contain;border-radius:6px;background:#171b27}
+@media(max-width:575.98px){.admin-app .home-slide-preview-trigger img{height:220px}.admin-app .home-slide-preview-full{max-height:65vh}}
